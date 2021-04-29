@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head profile="../images/prsIcon.png"> 
+
+        <title>Pigeon Rubbish Studios | Interactive</title>
+
+        <meta property="og:title" content="Pigeon Rubbish Studios | Interactive">
+
+        <meta property="og:site_name" content="Kyle Bolinger - Portfolio">
+
+        <meta property="og:description" content="Portfolio Site for Kyle Bolinger. Take a look around and let me know what you think! Hope you enjoy!">
+
+        <meta property="og:type" content="website">
+
+        <meta property="og:url" content="https://pigeonrubbish.kbolinger1.musites.org/">
+
+        <meta name="image" property="og:image" content="http://pigeonrubbish.kbolinger1.musites.org/images/prs-images/link-preview.jpg">
+
+        <meta name="author" content="Kyle Bolinger">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPZ8RSPZD2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPZ8RSPZD2');
+        </script>
+
+        <link rel="stylesheet" href="https://use.typekit.net/pmp1xju.css">
+
+        <link rel="stylesheet" href="../css/main.css">
+
+        <link rel="icon" type="image/png" href="../images/prs-images/prs-icon.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="mobile-nav-flex">
+
+                <a href="../index.html"><img id="prs-logo" src="../images/prs-images/prs-text.svg" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                <a href="javascript:void(0);" class="menu-icon" onclick="menuToggle()"><img src="../images/prs-images/menu.svg" alt="" class="menu-icon"></a>
+
+            </div>
+
+            <div class="desktop-nav">
+
+                <nav class="topnav" id="myTopnav">
+
+                    <a href="../index.html"><img id="prs-logo-nav" src="../images/prs-images/prs-text.svg" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                    <a class="nav-list" href="../index.html">Home</a>
+
+                    <a class="nav-list" href="video-games.html">Video Games</a>
+
+                    <a class="nav-list active" href="interactive.html">Interactive</a>
+
+                    <a class="nav-list" href="artwork.html">Artwork</a>
+
+                    <a class="nav-list" href="motion-graphics.html">Motion Graphics</a>
+
+                    <a class="nav-list" href="about.html">About</a>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <section class="content-width">
+
+            <h1 class="section-headings">Web Design</h1>
+
+            <div class="thumbnails">
+
+                <div>
+
+                    <a href="https://kbolinger1.musites.org/web1/" target="_blank"><img class="thumbnail-radius large-thumbnails small-thumbnails" src="../images/interactive/web1-preview.png" class="hover-shadow"></a>
+                
+                </div>
+
+                <div>
+
+                    <a href="https://kbolinger1.musites.org/" target="_blank"><img class="thumbnail-radius large-thumbnails small-thumbnails" src="../images/interactive/web2-preview.png" class="hover-shadow"></a>
+                
+                </div>
+
+                <div>
+
+                    <a href="https://ia.kbolinger1.musites.org/Projects/" target="_blank"><img class="thumbnail-radius large-thumbnails small-thumbnails" src="../images/interactive/ia-preview.png" class="hover-shadow"></a>
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-width">
+
+            <h1 class="section-headings">3D Models</h1>
+
+            <div class="thumbnails">
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius small-thumbnails" src="../images/interactive/prs-packaging.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"></a>
+                
+                </div>
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius small-thumbnails" src="../images/interactive/drone-photogram.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"></a>
+                
+                </div>
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius small-thumbnails" src="../images/interactive/dragon.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"></a>
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-width">
+
+            <h1 class="section-headings">GIS Mapping</h1>
+
+            <div class="thumbnails">
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/interactive/busch-thumbnail.jpg" onclick="openModal();currentSlide(4);reloadCardinals();" class="hover-shadow"></a>
+                
+                </div>
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/interactive/deer-thumbnail.jpg" onclick="openModal();currentSlide(5);reloadDeer();" class="hover-shadow"></a>
+                
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section id="interactive-modal-section">
+
+            <div id="myModal" class="modal" onclick="closeModal()">
+
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="content-width modal-content">
+            
+                    <div class="mySlides">
+                        
+                        <iframe width="100%" height="100%" title="Pigeon Rubbish Packaging" src="https://sketchfab.com/models/04f736c3497e4836a5db62ff4b99fdc2/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                    </div>
+                
+                    <div class="mySlides">
+                        
+                        <iframe width="100%" height="100%" title="Drone Photogrammetry of the DVA at Maryville" src="https://sketchfab.com/models/5e042a440c3044c2b8d8a50e8d1bee86/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                    </div>
+                
+                    <div class="mySlides">
+                        
+                        <iframe title="Photogrammetry of a Miniature Dragon Statue" width="100%" height="100%" src="https://sketchfab.com/models/abe4f826e37d460aa23746b45f59eb28/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                    </div>
+
+                    <div class="mySlides">
+
+                        <iframe id="cardinals-map" width='100%' height='100%' src='https://maryville.maps.arcgis.com/apps/View/index.html?appid=a31eb22acd9046b3aba93d1cb8cf3dc7&extent=-90.1949,38.6214,-90.1906,38.6239' frameborder='0' scrolling='no'></iframe>
+        
+                    </div>
+        
+                    <div class="mySlides">
+        
+                        <iframe id="deer-map" width='100%' height='100%' src='https://maryville.maps.arcgis.com/apps/View/index.html?appid=e592219f97994c1aafe7404b7116b493&extent=-91.1135,39.9244,-91.0962,39.9345' frameborder='0' scrolling='no'></iframe>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="footer-flex">
+
+                <a href="https://pigeon-rubbish-studios.itch.io/" target="_blank"><img class="footer-icons icon-radius" src="../images/social/itch-black.svg" alt="itch.io"></a>
+
+                <a href="https://github.com/PigeonRubbishStudios" target="_blank"><img class="footer-icons icon-radius" src="../images/social/github-logo.svg" alt="GitHub"></a>
+
+                <a href="https://www.linkedin.com/in/kylebolinger/" target="_blank"><img class="footer-icons icon-radius" src="../images/social/linkedin-black.svg" alt="LinkedIn"></a>
+
+                <a href="https://www.behance.net/kylebolinger" target="_blank"><img class="footer-icons icon-radius" src="../images/social/behance-black.svg" alt="Behance"></a>
+
+                <a href="https://www.instagram.com/pigeonrubbishstudios/" target="_blank"><img class="footer-icons" src="../images/social/instagram-black.svg" alt="Instagram"></a>
+
+                <a href="https://www.facebook.com/PigeonRubbishStudios" target="_blank"><img class="footer-icons icon-radius" src="../images/social/facebook-black.svg" alt="FaceBook"></a>
+            </div>
+
+        </footer>
+
+        <script type="text/javascript" src="../js/scroll-lock.min.js"></script>
+
+        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+
+        <script type="text/javascript" src="../js/jquery.stopStealPhoto.min.js"></script>
+
+        <script type="text/javascript" src="../js/skrollr.min.js"></script>
+
+        <script type="text/javascript" src="../js/swiper.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="../js/main.js"></script>
+        
+    </body>
+
+</html>

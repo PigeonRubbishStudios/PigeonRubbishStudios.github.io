@@ -1,0 +1,75 @@
+/* Style the button that is used to open and close the collapsible content */
+/* .collapsible {
+    font-family: Helvetica;
+    font-weight: 900;
+    background-color: #231F20;
+    color: #A32035;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active-collapse
+  {
+    background-color: #3d3d3d;
+  }
+
+  .collapsible:hover 
+  {
+    background-color: #6ABF4B;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: all 0.2s ease-out;
+  }
+
+  .code-header
+  {
+      margin: 0;
+    font-family: upgrade,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+  }
+
+  .type-header
+  {
+      margin: 0;
+    font-family: upgrade,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+  }
+
+  .collapsible:after
+{
+    content: '+';
+    font-size: 18px;
+    color: #A32035;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active-collapse:after 
+  {
+    content: "\2212";
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .collapse-margin
+  {
+      margin-bottom: 10rem;
+  } */

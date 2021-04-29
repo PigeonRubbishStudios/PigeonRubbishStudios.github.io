@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head profile="../images/prsIcon.png">
+
+        <title>Pigeon Rubbish Studios | Video Games</title>
+
+        <meta property="og:title" content="Pigeon Rubbish Studios | Video Games">
+
+            <meta property="og:site_name" content="Kyle Bolinger - Portfolio">
+
+            <meta property="og:description" content="Portfolio Site for Kyle Bolinger. Take a look around and let me know what you think! Hope you enjoy!">
+
+            <meta property="og:type" content="website">
+
+            <meta property="og:url" content="https://pigeonrubbish.kbolinger1.musites.org/">
+
+            <meta name="image" property="og:image" content="http://pigeonrubbish.kbolinger1.musites.org/images/prs-images/link-preview.jpg">
+
+            <meta name="author" content="Kyle Bolinger">
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPZ8RSPZD2"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DPZ8RSPZD2');
+            </script>
+
+        <link rel="stylesheet" href="https://use.typekit.net/pmp1xju.css">
+
+        <link rel="stylesheet" href="../css/main.css">
+
+        <link rel="icon" type="image/png" href="../images/prs-images/prs-icon.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="mobile-nav-flex">
+
+                <a href="../index.html"><img id="prs-logo" src="../images/prs-images/prs-text.svg" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                <a href="javascript:void(0);" class="menu-icon" onclick="menuToggle()"><img src="../images/prs-images/menu.svg" alt="" class="menu-icon"></a>
+
+            </div>
+
+            <div class="desktop-nav">
+
+                <nav class="topnav" id="myTopnav">
+
+                    <a href="../index.html"><img id="prs-logo-nav" src="../images/prs-images/prs-text.svg" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                    <a class="nav-list" href="../index.html">Home</a>
+
+                    <a class="nav-list active" href="video-games.html">Video Games</a>
+
+                    <a class="nav-list" href="interactive.html">Interactive</a>
+
+                    <a class="nav-list" href="artwork.html">Artwork</a>
+
+                    <a class="nav-list" href="motion-graphics.html">Motion Graphics</a>
+
+                    <a class="nav-list" href="about.html">About</a>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <section id="game-thumbnails">
+
+            <h1 class="section-headings">Xcode Games</h1>
+
+            <div class="content-width thumbnails">
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/artwork/games/fpdo-thumbnail.jpg" onclick="showGame(1)" class="hover-shadow"></a>
+
+                </div>
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/artwork/games/sr-thumbnail.jpg" onclick="showGame(2)" class="hover-shadow"></a>
+
+                </div>
+
+            </div>
+
+            <h1 class="section-headings second-heading">Unity Games</h1>
+
+            <div class="content-width thumbnails">
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/artwork/games/ttt-thumbnail.jpg" onclick="showGame(3)" class="hover-shadow"></a>
+
+                </div>
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/artwork/games/cc-thumbnail.jpg" onclick="showGame(4)" class="hover-shadow"></a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="fpdo-info" class="content-width game-section">
+
+            <a href="javascript:void(0);">
+
+                <div class="back-bar" onclick="hideGame(1)">
+
+                    <h1 class="back-heading">Back To All Games</h1>
+
+                </div>
+
+            </a>
+
+            <div class="full-width">
+
+                <img class="banner" src="../images/artwork/games/fpdo-slideshow.jpg" alt="FPDO Banner">
+
+            </div>
+
+            <div class="content-width game-flex">
+
+                <div>
+
+                    <video class="game-video" loop controls poster="../images/artwork/games/fpdo-preview.jpg" src="../videos/ferris.mp4"></video>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div class="game-info-text">
+
+                        <p><i>Ferris Pawler's Day Off</i> is a top-down, iOS infinite runner, named after the popular movie, <i>Ferris Bueller's Day Off.</i> Play as Ferris Pawler, a husky, who is skipping doggy school. Avoid the doggy police and the evil cats who want to send you back to school!</p>
+
+                    </div>
+
+
+                    <div class="credit-info">
+
+                        <p>&copy; 2018 Pigeon Rubbish Studios</p>
+                        <p>Coding By Kyle Bolinger</p>
+                        <p>Ferris Modeling, Rigging, & Animation By Kyle Bolinger</p>
+                        <p>Artwork By Madi Nixon</p>
+                        <p>Sound Effects & Music By Brinton Johnston</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- GitHub Embed (Style - vs2015)-->
+            <div class="collapse-margin">
+
+                <div class="code-header-flex">
+
+                    <div class="code-flex">
+
+                        <h1 class="code-header">Code</h1>
+
+                    </div>
+
+                    <div class="git-flex">
+
+                        <a href="https://github.com/PigeonRubbishStudios/Ferris-Pawler-s-Day-Off" target="_blank"><img id="github-text-logo" src="../images/social/github-text-logo.png" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                    </div>
+
+                </div>
+
+                <h2 class="type-header">Scenes</h2>
+
+                <button type="button" class="collapsible">Main Menu Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FFerris-Pawlers-Day-Off%2Fblob%2Fmaster%2FFerris-Pawlers-Day-Off%2FSwift%2FScenes%2FMainMenuScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Comic Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FFerris-Pawlers-Day-Off%2Fblob%2Fmaster%2FFerris-Pawlers-Day-Off%2FSwift%2FScenes%2FComicScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Tutorial Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FFerris-Pawlers-Day-Off%2Fblob%2Fmaster%2FFerris-Pawlers-Day-Off%2FSwift%2FScenes%2FTutorialScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Game Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FFerris-Pawlers-Day-Off%2Fblob%2Fmaster%2FFerris-Pawlers-Day-Off%2FSwift%2FScenes%2FGameScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Win Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FFerris-Pawlers-Day-Off%2Fblob%2Fmaster%2FFerris-Pawlers-Day-Off%2FSwift%2FScenes%2FWinScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Game Over Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FFerris-Pawlers-Day-Off%2Fblob%2Fmaster%2FFerris-Pawlers-Day-Off%2FSwift%2FScenes%2FGameOverScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <h2 class="type-header">Controllers</h2>
+
+                <button type="button" class="collapsible">Game View Controller</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FFerris-Pawlers-Day-Off%2Fblob%2Fmaster%2FFerris-Pawlers-Day-Off%2FSwift%2FControllers%2FGameViewController.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="sr-info" class="content-width game-section">
+
+            <a href="javascript:void(0);">
+                <div class="back-bar" onclick="hideGame(2)">
+
+                    <h1 class="back-heading">Back To All Games</h1>
+
+                </div>
+            </a>
+
+            <div class="full-width">
+
+                <img class="banner" src="../images/artwork/games/sr-slideshow.jpg" alt="SR Banner">
+
+            </div>
+
+            <div class="game-flex content-width">
+
+                <div>
+
+                    <video class="game-video" loop controls poster="../images/artwork/games/sr-preview.jpg" src="../videos/smuggler.mp4"></video>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div class="game-info-text">
+
+                        <p><i>Smuggler's Run</i> is a top-down, iOS runner. Play as Captain Morgan, a shark, trying to collect his lost barrels and bottles of rum. Avoid the "Navy Seals" who want to confiscate your rum and throw you in jail!</p>
+
+                    </div>
+
+
+                    <div class="credit-info">
+
+                        <p>&copy; 2018 Pigeon Rubbish Studios</p>
+                        <p>Coding By Kyle Bolinger</p>
+                        <p>Artwork By Jenny Cawley</p>
+                        <p>Sound Effects By Jeff Butler</p>
+                        <p>Music By Abigail Shaver</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- GitHub Embed (Style - vs2015)-->
+            <div class="collapse-margin">
+
+                <div class="code-header-flex">
+
+                    <div class="code-flex">
+
+                        <h1 class="code-header">Code</h1>
+
+                    </div>
+
+                    <div class="git-flex">
+
+                        <a href="https://github.com/PigeonRubbishStudios/Smugglers-Run" target="_blank"><img id="github-text-logo" src="../images/social/github-text-logo.png" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                    </div>
+
+                </div>
+
+                <h2 class="type-header">Scenes</h2>
+
+                <button type="button" class="collapsible">Main Menu Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FSmugglers-Run%2Fblob%2Fmaster%2FLaserGuidedWarSharks%2FMainMenuScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Game Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FSmugglers-Run%2Fblob%2Fmaster%2FLaserGuidedWarSharks%2FGameScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Win Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FSmugglers-Run%2Fblob%2Fmaster%2FLaserGuidedWarSharks%2FWinScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Game Over Scene</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FSmugglers-Run%2Fblob%2Fmaster%2FLaserGuidedWarSharks%2FGameOverScene.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <h2 class="type-header">Controllers</h2>
+
+                <button type="button" class="collapsible">Game View Controller</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FSmugglers-Run%2Fblob%2Fmaster%2FLaserGuidedWarSharks%2FGameViewController.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">ShaderKit Extensions</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FSmugglers-Run%2Fblob%2Fmaster%2FLaserGuidedWarSharks%2FShaderKitExtensions.swift&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="ttt-info" class="content-width game-section">
+
+            <a href="javascript:void(0);">
+                <div class="back-bar" onclick="hideGame(3)">
+
+                    <h1 class="back-heading">Back To All Games</h1>
+
+                </div>
+            </a>
+
+            <div class="full-width">
+
+                <img class="banner" src="../images/artwork/games/ttt-slideshow.jpg" alt="TTT Banner">
+
+            </div>
+
+            <div class="game-flex content-width">
+
+                <div>
+
+                    <video class="game-video" loop controls poster="../images/artwork/games/ttt-preview.jpg" src="../videos/teeter.mp4"></video>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div class="game-info-text">
+
+                        <p><i>Teeter-Totter Trouble</i> is a survival mobile game that utilizes accelerometers (tilt controls) in order to control a paper ball on a teeter-totter, while avoiding paper weights and the looming abyss below.</p>
+
+                    </div>
+
+
+                    <div class="credit-info">
+
+                        <p>&copy; 2020 Pigeon Rubbish Studios</p>
+                        <p>Coding By Kyle Bolinger</p>
+                        <p>Artwork By Kyle Bolinger</p>
+                        <p>Background Artwork By Cody Hammers</p>
+                        <p>Music By Kyle Bolinger</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- GitHub Embed (Style - vs2015)-->
+            <div class="collapse-margin">
+
+                <div class="code-header-flex">
+
+                    <div class="code-flex">
+
+                        <h1 class="code-header">Code</h1>
+
+                    </div>
+
+                    <div class="git-flex">
+
+                        <a href="https://github.com/PigeonRubbishStudios/Teeter-Totter-Trouble" target="_blank"><img id="github-text-logo" src="../images/social/github-text-logo.png" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                    </div>
+
+                </div>
+
+                <h2 class="type-header">Controllers</h2>
+
+                <button type="button" class="collapsible">Player Controller</button>
+
+                <!-- VS2015 Style -->
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FTeeter-Totter-Trouble%2Fblob%2Fmaster%2FAssets%2FScripts%2FPlayerController.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Scene Controller</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FTeeter-Totter-Trouble%2Fblob%2Fmaster%2FAssets%2FScripts%2FSceneController.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Spawn Controller</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FTeeter-Totter-Trouble%2Fblob%2Fmaster%2FAssets%2FScripts%2FSpawnController.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <h2 class="type-header">Game Object Scripts</h2>
+
+                <button type="button" class="collapsible">Platform</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FTeeter-Totter-Trouble%2Fblob%2Fmaster%2FAssets%2FScripts%2FPlatform.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Paper Weight</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FTeeter-Totter-Trouble%2Fblob%2Fmaster%2FAssets%2FScripts%2FPaperWeight.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Level Bounds</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FTeeter-Totter-Trouble%2Fblob%2Fmaster%2FAssets%2FScripts%2FLevelBounds.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="cc-info" class="content-width game-section">
+
+            <a href="javascript:void(0);">
+                <div class="back-bar" onclick="hideGame(4)">
+
+                    <h1 class="back-heading">Back To All Games</h1>
+
+                </div>
+            </a>
+
+            <div class="full-width">
+
+                <img class="banner" src="../images/artwork/games/cc-slideshow.jpg" alt="CC Banner">
+
+            </div>
+
+            <div class="game-flex content-width">
+
+                <div>
+
+                    <video class="game-video" loop controls poster="../images/artwork/games/cc-preview.jpg" src="../videos/cactical.mp4"></video>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div class="game-info-text">
+
+                        <p><i>Cactical Climber</i> is a VR climbing game in which you, a cactus, must use your spurs to climb over, up, and onto objects in order to reach the flower pot under the heat lamp before you freeze over!</p>
+
+                    </div>
+
+
+                    <div class="credit-info">
+
+                        <p>&copy; 2020 Pigeon Rubbish Studios</p>
+                        <p>Coding By Kyle Bolinger</p>
+                        <p>Artwork By Kyle Bolinger</p>
+                        <p>3D Modeling By Kyle Bolinger</p>
+                        <p>Music & SFX By Kyle Bolinger</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- GitHub Embed (Style - vs2015)-->
+            <!-- https://emgithub.com/ -->
+            <div class="collapse-margin itch-spacing">
+
+                <div class="code-header-flex">
+
+                    <div class="code-flex">
+
+                        <h1 class="code-header">Code</h1>
+
+                    </div>
+
+                    <div class="git-flex">
+
+                        <a href="https://github.com/PigeonRubbishStudios/Cactical-Climber" target="_blank"><img id="github-text-logo" src="../images/social/github-text-logo.png" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                    </div>
+
+                </div>
+
+                <h2 class="type-header">Player Controllers</h2>
+
+                <button type="button" class="collapsible">Walking</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FWalking.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Climber</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FClimber.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Climber Hand</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FClimberHand.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <h2 class="type-header">Animation Scripts</h2>
+
+                <button type="button" class="collapsible">Hand Animation</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FHandAnimation.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Grip Meter</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FGripMeter.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Heat Meter</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FHeatMeter.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <h2 class="type-header">Scene Controllers</h2>
+
+                <button type="button" class="collapsible">Level Manager</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FLevelManager.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Lose/Win</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FLoseWin.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+                <button type="button" class="collapsible">Menu Handler</button>
+
+                <div class="content">
+
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FPigeonRubbishStudios%2FCactical-Climber%2Fblob%2Fmain%2FAssets%2FCactical%2520Climber%2FScripts%2FMenuHandler.cs&style=vs2015&showLineNumbers=on&showFileMeta=off"></script>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="itch-container">
+
+            <iframe id="itch-widget" frameborder="0" src="https://itch.io/embed/953446?linkback=true&amp;border_width=2&amp;bg_color=252525&amp;fg_color=eeeeee&amp;link_color=B20000&amp;border_color=020202" width="1000" height="169"><a href="https://pigeon-rubbish-studios.itch.io/cactical-climber-vr">Cactical Climber VR by Kyle Bolinger</a></iframe>
+
+        </div>
+
+        <footer>
+
+            <div class="footer-flex">
+
+                <a href="https://pigeon-rubbish-studios.itch.io/" target="_blank"><img class="footer-icons icon-radius" src="../images/social/itch-black.svg" alt="itch.io"></a>
+
+                <a href="https://github.com/PigeonRubbishStudios" target="_blank"><img class="footer-icons icon-radius" src="../images/social/github-logo.svg" alt="GitHub"></a>
+
+                <a href="https://www.linkedin.com/in/kylebolinger/" target="_blank"><img class="footer-icons icon-radius" src="../images/social/linkedin-black.svg" alt="LinkedIn"></a>
+
+                <a href="https://www.behance.net/kylebolinger" target="_blank"><img class="footer-icons icon-radius" src="../images/social/behance-black.svg" alt="Behance"></a>
+
+                <a href="https://www.instagram.com/pigeonrubbishstudios/" target="_blank"><img class="footer-icons" src="../images/social/instagram-black.svg" alt="Instagram"></a>
+
+                <a href="https://www.facebook.com/PigeonRubbishStudios" target="_blank"><img class="footer-icons icon-radius" src="../images/social/facebook-black.svg" alt="FaceBook"></a>
+
+            </div>
+
+        </footer>
+
+        <script type="text/javascript" src="../js/scroll-lock.min.js"></script>
+
+        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+
+        <script type="text/javascript" src="../js/jquery.stopStealPhoto.min.js"></script>
+
+        <script type="text/javascript" src="../js/skrollr.min.js"></script>
+
+        <script type="text/javascript" src="../js/swiper.min.js"></script>
+
+        <script type="text/javascript" src="../js/collapse.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="../js/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head profile="../images/prsIcon.png"> 
+
+        <title>Pigeon Rubbish Studios | Motion Graphics</title>
+
+        <meta property="og:title" content="Pigeon Rubbish Studios | Motion Graphics">
+
+        <meta property="og:site_name" content="Kyle Bolinger - Portfolio">
+
+        <meta property="og:description" content="Portfolio Site for Kyle Bolinger. Take a look around and let me know what you think! Hope you enjoy!">
+
+        <meta property="og:type" content="website">
+
+        <meta property="og:url" content="https://pigeonrubbish.kbolinger1.musites.org/">
+
+        <meta name="image" property="og:image" content="http://pigeonrubbish.kbolinger1.musites.org/images/prs-images/link-preview.jpg">
+
+        <meta name="author" content="Kyle Bolinger">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPZ8RSPZD2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DPZ8RSPZD2');
+        </script>
+
+        <link rel="stylesheet" href="https://use.typekit.net/pmp1xju.css">
+
+        <link rel="stylesheet" href="../css/main.css">
+
+        <link rel="icon" type="image/png" href="../images/prs-images/prs-icon.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body class="body" id="body-scroll">
+
+        <header>
+
+            <div class="mobile-nav-flex">
+
+                <a href="../index.html"><img id="prs-logo" src="../images/prs-images/prs-text.svg" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                <a href="javascript:void(0);" class="menu-icon" onclick="menuToggle()"><img src="../images/prs-images/menu.svg" alt="" class="menu-icon"></a>
+
+            </div>
+
+            <div class="desktop-nav">
+
+                <nav class="topnav" id="myTopnav">
+
+                    <a href="../index.html"><img id="prs-logo-nav" src="../images/prs-images/prs-text.svg" alt="Pigeon Rubbish Studios Text Logo"></a>
+
+                    <a class="nav-list" href="../index.html">Home</a>
+
+                    <a class="nav-list" href="video-games.html">Video Games</a>
+
+                    <a class="nav-list" href="interactive.html">Interactive</a>
+
+                    <a class="nav-list" href="artwork.html">Artwork</a>
+
+                    <a class="nav-list active" href="motion-graphics.html">Motion Graphics</a>
+
+                    <a class="nav-list" href="about.html">About</a>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <section class="content-width">
+
+            <h1 class="section-headings">Vanguard Cinema</h1>
+
+            <div class="thumbnails">
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/artwork/motion/menu.jpg" onclick="openModal();currentSlide(1); playMenu(1)" class="hover-shadow"></a>
+                
+                </div>
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/artwork/motion/kiosk.jpg" onclick="openModal();currentSlide(2); playMenu(2)" class="hover-shadow"></a>
+                
+                </div>
+
+            </div>
+
+            <h1 class="section-headings second-heading">Perception</h1>
+
+            <div class="thumbnails">
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../images/artwork/motion/perception.jpg" onclick="openModal();currentSlide(3); playMenu(3)" class="hover-shadow"></a>
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-width" id="motion-modal-section">
+
+            <div id="myModal" class="modal" onclick="closeModal()">
+
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                    <div class="mySlides menu-content-width">
+
+                        <video id="menu-width" loop disablePictureInPicture controlsList="nodownload" controls src="../videos/menu.mp4"></video>
+        
+                    </div>
+        
+                    <div class="mySlides kiosk-content-width">
+        
+                        <video id="kiosk-width" loop disablePictureInPicture controlsList="nodownload" controls src="../videos/kiosk.mp4"></video>
+        
+                    </div>
+
+                    <div class="mySlides perception-content-width">
+        
+                        <video id="perception-width" loop disablePictureInPicture controlsList="nodownload" controls src="../videos/perception.mp4"></video>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- <section class="content-width flex-wip">
+
+            <div>
+
+                <h2 class="wip-text">This Page is a Work-In-Progress</h2>
+
+            </div>
+
+            <div>
+
+                <img class="red-panda" src="../images/prs-images/redPanda.png" alt="Kyle Bolinger Profile Picture">
+
+            </div>
+            
+        </section> -->
+
+        <footer>
+
+            <div class="footer-flex">
+
+                <a href="https://pigeon-rubbish-studios.itch.io/" target="_blank"><img class="footer-icons icon-radius" src="../images/social/itch-black.svg" alt="itch.io"></a>
+
+                <a href="https://github.com/PigeonRubbishStudios" target="_blank"><img class="footer-icons icon-radius" src="../images/social/github-logo.svg" alt="GitHub"></a>
+
+                <a href="https://www.linkedin.com/in/kylebolinger/" target="_blank"><img class="footer-icons icon-radius" src="../images/social/linkedin-black.svg" alt="LinkedIn"></a>
+
+                <a href="https://www.behance.net/kylebolinger" target="_blank"><img class="footer-icons icon-radius" src="../images/social/behance-black.svg" alt="Behance"></a>
+
+                <a href="https://www.instagram.com/pigeonrubbishstudios/" target="_blank"><img class="footer-icons" src="../images/social/instagram-black.svg" alt="Instagram"></a>
+
+                <a href="https://www.facebook.com/PigeonRubbishStudios" target="_blank"><img class="footer-icons icon-radius" src="../images/social/facebook-black.svg" alt="FaceBook"></a>
+
+            </div>
+
+        </footer>
+
+        <script type="text/javascript" src="../js/scroll-lock.min.js"></script>
+
+        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+
+        <script type="text/javascript" src="../js/jquery.stopStealPhoto.min.js"></script>
+
+        <script type="text/javascript" src="../js/skrollr.min.js"></script>
+
+        <script type="text/javascript" src="../js/swiper.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="../js/main.js"></script>
+        
+    </body>
+
+</html>
