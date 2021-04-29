@@ -1,0 +1,39 @@
+<svg id="flash-emblem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.78191 500.60394">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #f4c037;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #f4c037;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0.75px;
+      }
+
+      .cls-3 {
+        fill: #c99e2d;
+        stroke: #c99e2d;
+      }
+    </style>
+  </defs>
+  <g id="emblem">
+    <circle id="background" class="cls-1" cx="229.39095" cy="262.59427" r="226.89084"/>
+    <g id="bolt">
+      <polygon id="bolt-main" class="cls-2" points="456.125 0.291 300.275 164.796 378.2 164.796 234.258 287.085 324.091 287.085 2.658 500.291 238.588 310.893 161.748 309.816 306.095 182.112 234.258 179.943 456.125 0.291"/>
+      <polygon id="bolt-shadow" class="cls-3" points="375.872 65.275 154.178 209.167 249.412 209.167 89.238 345.533 170.409 345.533 84.647 434.476 238.588 310.893 161.748 309.816 306.095 182.112 234.258 179.943 375.872 65.275"/>
+    </g>
+  </g>
+</svg>

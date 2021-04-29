@@ -1,0 +1,31 @@
+{
+	"folders": 
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings": 
+	{
+		"liveSassCompile.settings.generateMap": false,
+		"liveSassCompile.settings.formats": 
+		[
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "/css"
+			}
+		],
+		"explorer.compactFolders": false,
+		"javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+		"javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+		"editor.wordWrap": "bounded",
+		"editor.wordWrapColumn": 200,
+		"files.exclude": {
+			"**/.meta": true
+		},
+		"liveSassCompile.settings.showOutputWindow": false
+	},
+
+	"editor.fontSize": 16,
+}

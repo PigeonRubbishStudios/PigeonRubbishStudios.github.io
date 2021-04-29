@@ -1,0 +1,188 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+section {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+section .background-triangles .blackbird-triangle {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../images/blackbird-site.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: z-index 0 ease-in-out;
+  transition: z-index 0 ease-in-out;
+}
+
+section .background-triangles .blackbird-triangle .link {
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+section .background-triangles .blackbird-triangle .link h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 50px;
+  font-family: ff-dax-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  left: 5%;
+  top: 200px;
+}
+
+section .background-triangles .blackbird-triangle .link svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+section .background-triangles .blackbird-triangle .link svg polygon {
+  fill: transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+section .background-triangles .blackbird-triangle:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 1;
+}
+
+section .background-triangles .blackbird-triangle:hover .link {
+  color: white;
+}
+
+section .background-triangles .blackbird-triangle:hover .link svg polygon {
+  fill: rgba(0, 0, 0, 0.75);
+}
+
+section .background-triangles .flash-triangle {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/flash-site.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+          clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: z-index 0 ease-in-out;
+  transition: z-index 0 ease-in-out;
+}
+
+section .background-triangles .flash-triangle .link {
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+section .background-triangles .flash-triangle .link h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 50px;
+  font-family: ff-dax-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  right: 5%;
+  bottom: 200px;
+  padding-left: 30%;
+  margin-left: 10%;
+}
+
+section .background-triangles .flash-triangle .link svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+section .background-triangles .flash-triangle .link svg polygon {
+  fill: transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+section .background-triangles .flash-triangle:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 1;
+}
+
+section .background-triangles .flash-triangle:hover .link {
+  color: white;
+}
+
+section .background-triangles .flash-triangle:hover .link svg polygon {
+  fill: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 945px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+  section .background-triangles .blackbird-triangle .link {
+    color: white;
+  }
+  section .background-triangles .blackbird-triangle .link h1 {
+    font-size: 22px;
+    left: 5%;
+    width: 100%;
+    padding-right: 30%;
+    margin-right: 10%;
+  }
+  section .background-triangles .blackbird-triangle .link svg polygon {
+    fill: rgba(0, 0, 0, 0.5);
+  }
+  section .background-triangles .flash-triangle .link {
+    color: white;
+  }
+  section .background-triangles .flash-triangle .link h1 {
+    font-size: 22px;
+    right: 0%;
+    width: 100%;
+    padding-left: 35%;
+    margin-left: 10%;
+  }
+  section .background-triangles .flash-triangle .link svg polygon {
+    fill: rgba(0, 0, 0, 0.5);
+  }
+}

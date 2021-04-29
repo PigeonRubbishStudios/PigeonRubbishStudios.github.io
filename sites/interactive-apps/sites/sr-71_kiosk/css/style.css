@@ -1,0 +1,222 @@
+html, body 
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html, a
+{
+    cursor: url("../images/touch-cursor.png"), auto;
+    /* cursor: none; */
+    text-decoration: none;
+}
+
+body
+{
+    background-color: black;
+}
+
+.title
+{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+.title-svg
+{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 20px auto;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.close-section
+{
+    position: absolute;
+    max-width: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(31, 31, 31);
+    transform: translateY(-50%);
+    -webkit-box-shadow: -5px 6px 20px 6px rgba(0,0,0,0.85); 
+    box-shadow: -5px 6px 20px 6px rgba(0,0,0,0.85);
+    -webkit-box-shadow: inset 5px 6px 20px 6px rgba(0, 0, 0, 0.432); 
+    box-shadow: inset 5px 6px 20px 6px rgba(0,0,0,0.432);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    right: -500px;
+    top: 50%;
+    z-index: 2;
+}
+
+.arrows
+{
+    font-family: ethnocentric,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding-top: 21%;
+    transform: scaleY(3.5);
+}
+
+.info-panel
+{
+    position: absolute;
+    max-width: 475px;
+    width: 100%;
+    height: 100vh;
+    background: rgb(59,59,59);
+    background: radial-gradient(circle, rgba(59,59,59,1) 0%, rgba(18,18,18,1) 100%);
+    -webkit-box-shadow: -5px 6px 20px 6px rgba(0,0,0,0.85); 
+    box-shadow: -5px 6px 20px 6px rgba(0,0,0,0.85);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    right: -500px;
+    z-index: 5;
+}
+
+p, h1, h2, li
+{
+    color: white;
+}
+
+h1
+{
+    font-family: futura-pt,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+h2
+{
+    font-family: futura-pt,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin: 5px;
+    padding-left: 20px;
+}
+
+ul
+{
+    margin: 0 0 30px 0;
+    list-style: none;
+    padding: 0 60px;
+}
+
+li::before
+{
+    position: absolute;
+    content: "— ";
+    left: -15px;
+    top: -1px;
+}
+
+li
+{
+    position: relative;
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.audio-link
+{
+    position: absolute;
+    width: 475px;
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    left: 50%;
+    bottom: 200px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.audio-button
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #bdbdbd;
+    padding: 20px 20px;
+    font-size: 24px;
+    border: 1px solid #8d8d8d;
+    background-image: linear-gradient(bottom, rgb(180, 180, 180) 0%, rgb(203, 203, 203) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(180, 180, 180) 0%, rgb(203, 203, 203) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(180, 180, 180) 0%, rgb(203, 203, 203) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(180, 180, 180) 0%, rgb(203, 203, 203) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(180, 180, 180) 0%, rgb(203, 203, 203) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(180, 180, 180)), color-stop(1, rgb(109, 109, 109)));
+    left: 50%;
+    bottom: 150px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.audio-button:hover
+{
+    background-image: linear-gradient(bottom, rgb(66, 66, 66) 0%, rgb(20, 20, 20) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(66, 66, 66) 0%, rgb(20, 20, 20) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(66, 66, 66) 0%, rgb(20, 20, 20) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(66, 66, 66) 0%, rgb(20, 20, 20) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(66, 66, 66) 0%, rgb(20, 20, 20) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(66, 66, 66)), color-stop(1, rgb(20, 20, 20)));
+}
+
+.audio-button p
+{
+    color: white;
+    font-family: futura-pt,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+
+#play, #stop
+{
+    max-width: 35px;
+    width: 100%;
+    max-height: 35px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#play
+{
+    display: initial;
+}
+
+#stop
+{
+    display: none;
+}
+
+#renderCanvas 
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    touch-action: none;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
