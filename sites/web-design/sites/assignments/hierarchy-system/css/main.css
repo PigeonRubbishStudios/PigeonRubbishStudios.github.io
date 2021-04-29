@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, html
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+body
+{
+    position: relative;
+    background-color: #fff;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.content-width
+{
+    position: relative;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 10px 20px;
+}
+
+header
+{
+    position: fixed;
+    width: 100vw;
+    height: 200px;
+    background-image: url('../images/jpg/header.jpg');
+    background-size: cover;
+    text-align: center;
+    font-family: 'dark__blackregular';
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 500;
+    top: 0;
+}
+
+.fixed-space
+{
+    width: 100vw;
+    height: 200px;
+}
+
+header div img
+{
+    width: 50%;
+}
+
+nav
+{
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    background-image: url('../images/jpg/nav.jpg');
+    background-size: cover;
+    bottom: 0;
+    box-shadow: -10px 0 10px black;
+}
+
+.navigation
+{
+    width: 100vw;
+    height: 50px;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin-top: -18px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: rgb(146, 133, 57);
+}
+
+.harry:hover
+{
+    color: red;
+}
+
+.hermione:hover
+{
+    color: rgb(0, 255, 255);
+}
+
+.ron:hover
+{
+    color: rgb(112, 112, 112);
+}
+
+.dumbledore:hover
+{
+    color: rgb(255, 238, 0);
+}
+
+.voldemort:hover
+{
+    color: rgb(60, 255, 0);
+}
+
+section
+{
+    width: 100%;
+    max-height: 75%;
+    font-family: ganache,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section-flex
+{
+    display: flex;
+}
+
+.wand
+{
+    max-width: 60%;
+}
+
+.wand img
+{
+    width: 100%;
+    padding-top: 75px;
+}
+
+h2
+{
+    font-size: 30pt;
+}
+
+section ul
+{
+    list-style: none;
+    /* width: 40%; */
+}
+
+li
+{
+    font-size: 26pt;
+    /* width: %; */
+}
+
+.reverse-section
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.reverse-section img
+{
+    transform: scaleX(-1);
+}
+
+.fractions
+{
+    font-size: 15pt;
+}
+
+.list-span
+{
+    padding-left: 10px;
+    font-size: 18pt;
+}
+
+.section1
+{
+    background-image: url('../images/jpg/Harry.jpg');
+    background-size: cover;
+    color: rgb(255, 0, 0);
+}
+
+.section2
+{
+    background-image: url('../images/jpg/Hermione.jpg');
+    background-size: cover;
+    color: rgb(0, 236, 225);
+}
+
+.section3
+{
+    background-image: url('../images/jpg/Ron.jpg');
+    background-size: cover;
+    color: rgb(131, 131, 131);
+}
+
+.section4
+{
+    background-image: url('../images/jpg/Dumbledore.jpg');
+    background-size: cover;
+    color: rgb(255, 251, 0);
+}
+
+.section5
+{
+    background-image: url('../images/jpg/Voldemort.jpg');
+    background-size: cover;
+    color: rgb(0, 255, 34);
+}
+
+.voldemort-wand
+{
+    margin-top: 40px;
+}

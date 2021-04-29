@@ -1,0 +1,25 @@
+.swiper-container
+{
+	width: 600px;
+	height: 400px;
+}
+
+.swiper-pagination-bullet-active, .swiper-pagination-bullet
+{
+	background-color: white;
+}
+
+.swiper-button-next, .swiper-button-prev
+{
+	background-image: url('../images/arrow.png');
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+
+.swiper-button-prev
+{
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

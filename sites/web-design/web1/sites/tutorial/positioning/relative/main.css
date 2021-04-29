@@ -1,0 +1,49 @@
+body 
+{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#shell 
+{
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #333;
+}
+
+.square 
+{
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+#red 
+{
+	background-color: red;
+	z-index: 0;
+}
+
+#green 
+{
+	background-color: green;	
+	left: 100px;
+	top: -100px;
+	z-index: 1000;
+}
+
+#blue 
+{
+	background-color: blue;
+	left: 200px;
+	top: -200px;
+}
+
+#yellow 
+{
+	background-color: yellow;
+	left: 300px;
+	top: -300px;
+}

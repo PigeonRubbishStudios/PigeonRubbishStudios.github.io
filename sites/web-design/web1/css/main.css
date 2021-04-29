@@ -1,0 +1,315 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    background-image: url('../images/jpg/background.jpg');
+    background-size: cover;
+    width: 100vw;
+}
+
+header
+{
+    background-image: url('../images/jpg/header.jpg');
+    background-size: cover;
+    /* max-height: 165px; */
+    /* height: 100%; */
+    width: 100vw;
+    position: relative;
+}
+
+.content-width
+{
+    max-width: 1074px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.name-flex
+{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-name
+{
+    max-width: 467px;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* margin-left: 55%; */
+    /* margin-right: 10px */
+    /* position: absolute; */
+    /* float: right; */
+}
+
+.body-flex
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row-one
+{
+    display: flex;
+    /* max-width: 48%; */
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.about-image
+{
+    max-width: 547.5px;
+    width: 100%;
+    margin-top: -115px;
+    z-index: 100;
+}
+
+.row-two
+{
+    display: flex;
+    /* flex-direction: column; */
+    /* max-width: 52%; */
+    width: 100%;
+    margin-top: 1%;
+    justify-content: space-between;
+}
+
+.link-boxes.contact-box
+{
+    max-width: 427.5px;
+    width: 100%;
+    margin-left: 15px;
+    /* line-height: 1.5; */
+}
+
+.link-boxes
+{
+    position: relative;
+    background-color: white;
+    border: 8px solid black;
+    margin-bottom: 50px;
+    max-width: 560px;
+    width: 100%;
+}
+
+.link-boxes:after 
+{
+    content: "";
+    position: absolute;
+    width: 102%;
+    height: 105%;
+    background-color: black;
+    bottom: -25px;
+    left: -25px;
+    z-index: -1;
+}
+
+.link-boxes-content-width
+{
+    max-width: 560px;
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 2px;
+}
+
+.tutorial-box
+{
+    margin-top: 2%;
+    margin-left: -3%;
+}
+
+h1
+{
+    margin: 0;
+    font-family: ccbiffbamboom, sans-serif;
+    font-size: 40px;
+    position: relative;
+    display: table;
+    padding-top: 2%;
+}
+
+h1:after 
+{
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    z-index: 10;
+
+    border-width: 0 0 4px;
+    border-style: solid;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    width: fit-content;
+    transition: all 0.4s ease;
+    transform-origin: 50% 50%;
+}
+
+.contact-line-height
+{
+    line-height: 2;
+}
+
+li:hover
+{
+    transform: skew(30deg);
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+    font-family: ccsignlanguage, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+a:not(.contact-list)
+{
+    line-height: 2;
+}
+
+a:hover
+{
+    color: gray;
+}
+
+#project-box
+{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+footer
+{
+    background-image: url('../images/jpg/footer.jpg');
+    background-size: cover;
+}
+
+.footer-flex
+{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.footer-icons
+{
+    margin: 25px 35px 25px 35px;
+    max-width: 65px;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.footer-icons:hover 
+{
+    transform: scale(1.2);
+}
+
+.icon-radius
+{
+    border-radius: 25%;
+}
+
+@media screen and (max-width: 1085px)
+{
+
+    .content-width:not(.name-flex)
+    {
+        max-width: 580px;
+        width: 100%;
+    }
+
+    .header-name
+    {
+        width: 40vw;
+        margin-left: 1%;
+    }
+    
+    .body-flex
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .row-one
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 3%;
+    }
+
+    .row-two
+    {
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        margin-left: 3%;
+    }
+
+    .about-image img
+    {
+        width: 77%;
+        margin-top: 80px;
+        margin-left: 18.5%;
+    }
+
+    .tutorial-box
+    {
+        width: 90vw;
+        margin: 0;
+        margin-top: 2%;
+    }
+
+    .project-box
+    {
+        width: 90vw;
+        margin: 0;
+        margin-top: 7%;
+    }
+
+    .link-boxes.contact-box
+    {
+        width: 90vw;
+        margin: 0;
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+
+    a
+    {
+        font-size: 1em;
+    }
+
+    .name-flex
+    {
+        justify-content: flex-start;
+    }
+
+    img.footer-icons
+    {
+        max-width: 55px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

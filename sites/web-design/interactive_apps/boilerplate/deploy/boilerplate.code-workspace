@@ -1,0 +1,22 @@
+{
+	"folders": 
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings": 
+	{
+		"liveSassCompile.settings.generateMap": false,
+		"liveSassCompile.settings.formats": 
+		[
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "/css"
+			}
+		]
+	},
+
+	"editor.fontSize": 16,
+}

@@ -1,0 +1,41 @@
+body 
+{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.container 
+{
+	width: 800px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.container .text-content 
+{
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	z-index: 100;
+}
+
+.container .color-overlay 
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(110, 190, 197, .8);
+	position: absolute;
+	z-index: 50;
+}
+
+.container img 
+{
+	width: 100%;
+	display: block;
+}

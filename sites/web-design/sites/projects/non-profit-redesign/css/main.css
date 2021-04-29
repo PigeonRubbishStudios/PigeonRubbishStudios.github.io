@@ -1,0 +1,703 @@
+@charset "UTF-8";
+
+/* GLOBAL */
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    position: relative;
+    background-image: url('../images/svg/background.svg');
+    background-size: 135vw;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.content-width
+{
+    position: relative;
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px dotted rgba(0, 0, 0, .15); */
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+    font-family: 'furoreregular';
+}
+
+section
+{
+    position: relative;
+}
+
+h1, h2, h3
+{
+    font-family: 'furoreregular';
+    text-align: center;
+}
+
+h1
+{
+    color: white;
+    font-size: 6vw;
+}
+
+h2
+{
+    color: black;
+    font-size: 5.147058823529412vw;
+}
+
+h3
+{
+    color: white;
+    font-size: 35px;
+}
+
+p
+{
+    color: white;
+    font-size: 1.4705882352941178vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 375px)
+{
+    h3
+    {
+        font-size: 6vw;
+    }
+}
+
+
+
+/* NAVIGATION */
+header
+{
+    position: fixed;
+    background-image: url('../images/svg/nav.svg'); 
+    background-size: cover;
+    background-position: top;
+    max-width: 100vw;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    z-index: 500;
+}
+
+nav
+{
+    font-family: 'furoreregular';
+    height: 75px;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    /* color: rgb(0, 255, 255); */
+    font-size: 28px;
+}
+
+nav a, nav a svg
+{
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    mix-blend-mode: overlay;
+    transition: all 0.4s ease-in-out;
+}
+
+nav a svg
+{
+    fill: rgb(0, 255, 255);
+}
+
+nav a:hover:not(:first-child)
+{
+    color: black;
+    font-size: 32px;
+}
+
+.nav-icons:hover
+{
+    transform: scale(1.5);
+    fill: black;
+}
+
+
+
+/* MOBILE NAV */
+.mobile
+{
+    display: none;
+    height: 75px;
+}
+
+.mobile-nav-flex
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75px;
+}
+
+.mobile-nav-logo
+{
+    max-width: 50vw;
+    width: 100%;
+    mix-blend-mode: overlay;
+}
+
+.hamburger-menu
+{
+    max-width: 8vw;
+    width: 100%;
+    mix-blend-mode: overlay;
+    justify-self: flex-end;
+}
+
+@media screen and (max-width: 768px)
+{
+    .mobile
+    {
+        display: block;
+    }
+
+    .desktop
+    {
+        display: none;
+    }
+}
+
+
+
+/* SLIDE SHOW */
+.swiper-container
+{
+    width: 100%;
+    max-height: 538px;
+    margin-top: 75px;
+}
+
+.slideshow-image
+{
+    max-width: 100vw;
+    width: 100%;
+    max-height: 737px;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet
+{
+    max-width: 15px;
+    width: 100%;
+    height: 15px;
+    opacity: 0.68;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid lime;
+}
+
+.swiper-pagination-bullet-active
+{
+    background-color: lime
+}
+
+
+
+/* SECTION 1 */
+.banner-container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 495;
+}
+
+.section1-banner
+{
+    /* position: absolute; */
+    max-width: 95vw;
+    /* --width: 1248px; */
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    /* top: 8%;
+    left: 50%;
+    margin-left: calc(var(--width) / -2);
+    z-index: 495; */
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.extra-life-main
+{
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+/* SECTION 2 */
+.section2-banner
+{
+    /* position: absolute; */
+    max-width: 1248px;
+    --width: 1248px;
+    --height: fit-content;
+    width: 100%;
+    height: fit-content;
+    margin: 50px auto;
+    z-index: 495;
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.iframe
+{
+    margin: 0 auto;
+}
+
+iframe
+{
+    max-width: 565px;
+    width: 100%;
+    height: 320px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 7px 7px 15px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 7px 15px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 15px 2px rgba(0,0,0,0.75);
+}
+
+.mission-paragraph
+{
+    max-width: 784px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+
+/* SECTION 3 */
+.section3-banner
+{
+    max-width: 1248px;
+    width: 100%;
+    height: 600px;
+    margin: 50px auto;
+    z-index: 495;
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.section3-banner h2
+{
+    margin-bottom: 100px;
+}
+
+.timeline-bar
+{
+    position: relative;
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+    height: 5px;
+}
+
+.timeline-positioning
+{
+    position: absolute;
+    top: -25px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.timeline-flex
+{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: stretch; */
+    width: 100%;
+}
+
+.year-div
+{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.circle
+{
+    max-width: 50px;
+    height: 50px;
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.icon-container
+{
+    height: 85px;
+}
+
+.timeline-icons
+{
+    height: 85px;
+    padding: 15px 0;
+}
+
+.timeline-space
+{
+    padding: 15px 0;
+    height: fit-content;
+}
+
+.timeline-paragraph
+{
+    max-width: 134px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* SECTION 3 MOBILE */
+@media screen and (max-width:981px)
+{
+    .section3-banner
+    {
+        height: fit-content;
+    }
+
+    .timeline-bar
+    {
+        width: 5px;
+        height: 1500px;
+        margin-left: 15%;
+        margin-top: 25px;
+    }
+
+    .timeline-positioning
+    {
+        height: 100%;
+        top: 0;
+        left: -23.5px;
+    }
+
+    .timeline-flex
+    {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-top: -25px;
+    }
+
+    .year-div
+    {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle
+    {
+        width: 100vh;
+        height: 50px;
+    }
+
+    .timeline-paragraph
+    {
+        width: 175px;
+        margin: 50px;
+    }
+
+    .timeline-space
+    {
+        padding: 80px 50px 0 50px;
+    }
+
+    .timeline-icons
+    {
+        padding-left: 10px;
+    }
+
+    .text-flex
+    {
+        margin-left: -50px;
+    }
+
+    .text-flex p
+    {
+        font-size: 3vw;
+        padding-left: -10px;
+    }
+}
+
+
+
+/* SECTION 4 */
+.section4-banner
+{
+    max-width: 1248px;
+    --width: 1248px;
+    --height: fit-content;
+    width: 100%;
+    height: fit-content;
+    margin: 50px auto;
+    z-index: 495;
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.participate-flex
+{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.participate-info
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 273px;
+    width: 100%;
+}
+
+.participate-icons
+{
+    max-height: 13.235294117647058vw;
+    height: 100%;
+}
+.participate-info h3:not(.first-participate-header)
+{
+    padding: 25px 0 10px 0;
+}
+
+.first-participate-header
+{
+    padding: 25px 0 50px 0;
+}
+
+.participate-paragraph
+{
+    line-height: 1.5;
+}
+
+.button-flex
+{
+    display: flex;
+    justify-content: center;
+}
+
+.bevelBox 
+{
+    width: 250px;
+    text-align: center;
+	box-shadow: inset 0px 1px 3px 0px #bababa;
+	background: linear-gradient(to bottom, #555555 5%, #131313 100%);
+	background-color :#858585;
+	border-radius: 10px;
+	border: 1px solid #666666;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 45px;
+	padding: 18px 0;
+	text-decoration: none;
+    text-shadow: 0px -1px 0px #616161;
+    margin: 100px 25px 0 25px;
+}
+
+.bevelBox:hover 
+{
+	background:linear-gradient(to bottom, #1f1f1f 5%, #858585 100%);
+	background-color:#1f1f1f;
+}
+
+.buttons
+{
+    color: transparent;
+    background: lightgray; 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    text-shadow: 2px 5px 5px rgba(255, 255, 255, 0.3); 
+}
+
+
+
+/* SECTION 4 MOBILE */
+@media screen and (max-width: 768px)
+{
+    .participate-flex
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .participate-info
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 25px;
+        width: 100vw;
+    }
+
+    .participate-icons
+    {
+        max-height: 20vw;
+    }
+
+    .reverse
+    {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .reverse, .text-flex2
+    {
+        margin-right: 50px;
+    }
+
+    .text-flex2
+    {
+        margin-left: 50px;
+        max-width: 500px;
+    }
+
+    .buttons
+    {
+        font-size: 25px;
+    }
+}
+
+
+
+/* SECTION 5 */
+.section5-banner
+{
+    /* position: absolute; */
+    max-width: 1248px;
+    --width: 1248px;
+    --height: fit-content;
+    width: 100%;
+    height: fit-content;
+    margin: 50px auto;
+    z-index: 495;
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.cmnh-logo
+{
+    max-width: 145px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.section5-banner h2
+{
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+
+.section5-banner p
+{
+    line-height: 1.5;
+}
+
+
+
+/* FOOTER */
+footer
+{
+    background-image: url('../images/svg/nav.svg'); 
+    background-size: cover;
+    background-position: top;
+}
+
+.footer-flex
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.copyright
+{
+    
+    max-width: 180px;
+    width: 100%;
+}
+
+.copyright p
+{
+    font-size: 15px;
+    text-align: left;
+}
+
+.social-div
+{
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social-flex
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icons-link
+{
+    transition: all 0.4s ease-in-out;
+}
+
+.icons-link:hover
+{
+    transform: scale(1.5);
+}
+
+.social-icons:not(.youtube)
+{
+    max-width: 35px;
+    width: 100%;
+}
+
+.youtube
+{
+    height: 35px;
+}
+
+@media screen and (max-width: 375px)
+{
+    .youtube
+    {
+        height: 3vh;
+    }
+}

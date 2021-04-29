@@ -1,0 +1,105 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+}
+h1
+{
+    margin: 0;
+    font-size: 65px;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.bold-text
+{
+    font-weight: bold;
+}
+
+h2
+{
+    margin: 0;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+    font-weight: 2;
+    font-style: italic;
+}
+
+#logo
+{
+    margin-top: 62px;
+    width: 217px;
+    height: 79px;
+}
+
+header
+{
+    color: white;
+    margin: 0 0 60px 0;
+    background-image: url('images/header-background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 0.5546875px;
+}
+
+#sign-up-button
+{
+    display: table;
+    border: 3px solid white;
+    margin-top: 71px;
+    margin-bottom: 71px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#sign-up-link
+{
+    padding: 11px 55px 11px 55px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.content-width
+{
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-spacing
+{
+    line-height: 32px;
+    color: gray;
+    font-size: 16px;
+}
+
+.images
+{
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+    padding-top: 60px;
+    padding-bottom: 63px;
+}
+
+.link-styles
+{
+    color: #1ab7c1;
+}
+
+.link-styles:hover
+{
+    color: red;
+}

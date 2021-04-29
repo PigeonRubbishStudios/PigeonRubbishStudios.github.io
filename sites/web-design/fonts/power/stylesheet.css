@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'IEC symbols Unicode';
+    src: url('UnicodeIECsymbol.woff2') format('woff2'),
+        url('UnicodeIECsymbol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

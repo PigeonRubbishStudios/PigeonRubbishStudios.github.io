@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+/* GENERAL */
+body, html
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    background-color: #fff;
+    color: #333;
+    font-family: sans-serif;
+}
+
+h1
+{
+    font-size: 75pt;
+}
+
+h2
+{
+    font-size: 35pt;
+}
+
+h3
+{
+    font-size: 25pt;
+}
+
+h4
+{
+    position: absolute;
+    background-color: dodgerblue;
+    padding: 5px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    bottom: -15px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.content-width
+{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section
+{
+    padding: 50px 0;
+}
+
+
+
+/* TITLE SECTION */
+header
+{
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+
+
+/* FLIP CARD */
+.flip-card-flex
+{
+    max-width: 1050px;
+    width: 100%;
+    display: flex;
+    box-shadow: 15px 15px 17px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 15px 15px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 15px 17px 0px rgba(0,0,0,0.75);
+}
+
+.reverse
+{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.reverse-shadow
+{
+    box-shadow: -15px 15px 17px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -15px 15px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -15px 15px 17px 0px rgba(0,0,0,0.75);
+}
+
+.flip-card 
+{
+    position: relative;
+    background-color: transparent;
+    max-width: 1000px;
+    width: 100%;
+    height: 512.7529411765px;
+    /* perspective: 1000px; */
+    display: flex;
+}
+
+.flip-card-inner 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipped
+{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.site-image
+{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.flip-card-back 
+{
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 5% 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.info
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+    padding-bottom: 15px;
+}
+
+.similar-sites
+{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+}
+
+.similar-sites-reverse
+{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+
+.tab-flex
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.tab-flex-reverse
+{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.tabs
+{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background-color: dodgerblue;
+    transition: all 0.4s ease-in-out;
+    transform-origin: top left;
+    z-index: 10;
+}
+
+.tabs:hover
+{
+    transform: scale(1.2);
+}
+
+.tabs-reverse
+{
+    transform-origin: top right;
+}
+
+.tabs-shadow
+{
+    box-shadow: 15px 15px 17px 0px rgba(0,0,0,0.50);
+    -webkit-box-shadow: 15px 15px 17px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 15px 15px 17px 0px rgba(0,0,0,0.50);
+}
+
+.tabs-shadow-reverse
+{
+    box-shadow: -15px 15px 17px 0px rgba(0,0,0,0.50);
+    -webkit-box-shadow: -15px 15px 17px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: -15px 15px 17px 0px rgba(0,0,0,0.50);
+}
+
+.flip-bar
+{
+    position: relative;
+    max-width: 50px;
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+.flip-bar:hover
+{
+    cursor: pointer;
+}
+
+.flip-icon
+{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    margin-top: -21px;
+    left: 50%;
+    margin-left: -21px;
+    mix-blend-mode: overlay;
+}
+
+
+
+/* FOOTER */
+footer
+{
+    padding-top: 50px;
+    text-align: center;
+}
