@@ -4,6 +4,21 @@
       .cls-1 {
         fill: #fff;
       }
+
+      #facebook
+      {
+        overflow: visible;
+      }
+
+      #facebook-background
+      {
+        fill: transparent;
+      }
+
+      #f-body
+      {
+        transform: translateY(-10px);
+      }
     </style>
   </defs>
   <g id="facebook">

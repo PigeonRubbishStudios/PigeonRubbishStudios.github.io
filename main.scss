@@ -1,10 +1,20 @@
 /* Variables */
 $klpRed: #B20000;
-$redBoxCenter: #9A2026;
-$redBoxTop: #A52328;
-$redBoxBottom: #891D22;
-$redBoxLeft: #8C1E22;
-$redBoxRight: #A12227;
+$klpGrey: #252525;
+
+$mutedRed: desaturate($klpRed, 30%);
+$highlightRed: lighten($mutedRed, 3%);
+$shadowRed: darken($mutedRed, 3%);
+
+$mutedGrey: lighten($klpGrey, 5%);
+$highlightGrey: lighten($mutedGrey, 3%);
+$shadowGrey: darken($mutedGrey, 3%);
+
+$lightRed: lighten($klpRed, 5%);
+$lightGrey: lighten($klpGrey, 5%);
+
+$darkRed: darken($klpRed, 20%);
+$darkGrey: darken($klpGrey, 5%);
 
 /* All Pages */
 *
@@ -27,7 +37,7 @@ html, body
 
 body
 {
-  background-color: rgb(32, 32, 32);
+  background-color: $klpGrey;
   font-family: Helvetica;
   /* background-image: url('../images/prs-images/background.jpg');
   background-size: cover;
@@ -103,8 +113,7 @@ ul
 /* Nav Bar */
 header
 {
-  background-image: url('../images/prs-images/prs-header.svg');
-  background-size: cover;
+  background-color: $klpRed;
   width: 100vw;
   min-height: 61px;
 
@@ -134,14 +143,16 @@ header
             margin: 0;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             overflow: hidden;
+            height: 67px;
 
             #prs-logo-nav
             {
-            width: 175px;
-            padding: 5% 0 0 0;
+              width: 218px;
+              padding: 5% 10px 0 10px;
+              margin-right: 5px;
             }
 
             a.nav-list
@@ -153,18 +164,27 @@ header
                 text-decoration: none;
                 font-size: 20px;
                 font-weight: 900;
-                padding: 19px 30px;
+                padding: 19px 0px;
+                max-width: 218px;
+                width: 100%;
+                height: 100%;
+                transition: all 0.4s ease-in-out;
 
                 &.active
                 {
-                    background-color: black;
-                    color: #A32035;
+                    background-color: $klpGrey;
+                    color: $klpRed;
+
+                    &:last-child
+                    {
+                      border-right: none;
+                    }
                 }
 
                 &:hover:not(:first-child)
                 {
-                    background-color: #6ABF4B;
-                    color: #A32035;
+                    background-color: $klpGrey;
+                    color: $klpRed;
                 }
             }
         }
@@ -272,7 +292,7 @@ header
   {
     .back-bar
     {
-      background-color: black;
+      background-color: $darkGrey;
       width: 100%;
       transition: all 0.4s ease;
 
@@ -287,7 +307,7 @@ header
         font-weight: 900;
         font-style: normal;
         text-align: center;
-        color: #A32035;
+        color: $klpRed;
         font-size: 50px;
         margin: 0;
         padding: 41.5 0;
@@ -361,7 +381,7 @@ header
     {
       display: flex;
       width: 100%;
-      background-color: rgb(90, 17, 29);
+      background-color: $darkRed;
       justify-content: space-between;
 
       .code-flex
@@ -380,7 +400,6 @@ header
           text-align: left;
           color: white;
           font-size: 50px;
-          background-color: rgb(90, 17, 29);
           position: relative;
         }
       }
@@ -411,15 +430,15 @@ header
       text-align: left;
       color: white;
       font-size: 25px;
-      background-color: rgb(49, 10, 16);
+      background-color: lighten($darkRed, 5%);
     }
 
     .collapsible 
     {
       font-family: Helvetica;
       font-weight: 900;
-      background-color: #231F20;
-      color: #A32035;
+      background-color: lighten($darkGrey, 3%);
+      color: $klpRed;
       cursor: pointer;
       padding: 18px;
       width: 100%;
@@ -427,18 +446,18 @@ header
       text-align: left;
       outline: none;
       font-size: 15px;
-      border-bottom: 0.5px solid rgb(49, 10, 16);
+      border-bottom: 0.5px solid $klpGrey;
 
       &:hover
       {
-        background-color: #6ABF4B;
+        background-color: $darkGrey;
       }
 
       &:after
       {
         content: '+';
         font-size: 18px;
-        color: #A32035;
+        color: $klpRed;
         float: right;
         margin-left: 5px;
       }
@@ -458,6 +477,7 @@ header
       overflow: hidden;
       background-color: rgb(30, 30, 30);
       transition: all 0.2s ease-out;
+      transform-origin: top center;
     }
   }
 
@@ -800,11 +820,11 @@ header
         max-width: 400px;
         width: 100%;
         max-height: 218.34px;
-        background-color: #313131;
-        border-top: 10px solid #353535;
-        border-bottom: 10px solid #2C2C2C;
-        border-left: 10px solid #2D2D2D;
-        border-right: 10px solid #333333;
+        background-color: $mutedGrey;
+        border-top: 10px solid $highlightGrey;
+        border-right: 10px solid $highlightGrey;
+        border-bottom: 10px solid $shadowGrey;
+        border-left: 10px solid $shadowGrey;
         margin-bottom: 0;
 
         .name-logo-div
@@ -831,11 +851,11 @@ header
       {
         max-width: 400px;
         width: 100%;
-        background-color: $redBoxCenter;
-        border-top: 10px solid $redBoxTop;
-        border-bottom: 10px solid $redBoxBottom;
-        border-left: 10px solid $redBoxLeft;
-        border-right: 10px solid $redBoxRight;
+        background-color: $mutedRed;
+        border-top: 10px solid $highlightRed;
+        border-right: 10px solid $highlightRed;
+        border-bottom: 10px solid $shadowRed;
+        border-left: 10px solid $shadowRed;
 
         &.space-right
         {
@@ -963,7 +983,7 @@ header
 
       .resume-link
       {
-        color: #6ABF4B;
+        color: white;
         font-weight: bold;
 
         .resume-link-box
@@ -974,13 +994,14 @@ header
 
           &:hover
           {
-            background-color: #7a1a1f;
-            border-top: 10px solid #801b1e;
-            border-bottom: 10px solid #69171b;
-            border-left: 10px solid #571315;
-            border-right: 10px solid #6d181b;
+            background-color: darken($mutedRed, 5%);
+            border-top: 10px solid darken($highlightRed, 5%);
+            border-right: 10px solid darken($highlightRed, 5%);
+            border-bottom: 10px solid darken($shadowRed, 5%);
+            border-left: 10px solid darken($shadowRed, 5%);
+            
             transform: scale(1.2);
-            color: #5aa040;
+            color: darken(white, 5%);
           }
         }
       }
@@ -997,7 +1018,8 @@ footer
     width: 100%;
     bottom: 0;
     // height: 5rem;
-    background-image: url('../images/prs-images/prs-header.svg');
+    // background-image: url('../images/prs-images/prs-header.svg');
+    background-color: $mutedRed;
     background-size: cover;
 
     .footer-flex
@@ -1020,7 +1042,7 @@ footer
 
             &.footer-icons:hover 
             {
-                transform: scale(1.2);
+                transform: scale(1.5);
             }
         }
     }
@@ -1077,8 +1099,9 @@ footer
             justify-content: flex-start;
             position: absolute;
             // transition: all 0.5s ease;
-            background-color: rgb(128, 25, 42);
+            background-color: $mutedRed;
             z-index: 45;
+            height: fit-content;
 
             #prs-logo-nav
             {
@@ -1088,8 +1111,11 @@ footer
             a.nav-list
             {
                 display: none;
-                width: 100%;
                 text-align: left;
+                padding: 19px 30px;
+                max-width: 100vw;
+                width: 100%;
+                height: unset;
             }
         }
     }

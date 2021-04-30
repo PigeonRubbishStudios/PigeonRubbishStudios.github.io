@@ -4,6 +4,11 @@
       .cls-1 {
         fill: #fefefe;
       }
+
+      #linkedin-background
+      {
+        fill: transparent;
+      }
     </style>
   </defs>
   <g id="linkedin">

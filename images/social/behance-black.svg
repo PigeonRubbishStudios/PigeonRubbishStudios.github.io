@@ -4,6 +4,17 @@
       .cls-1 {
         fill: #fff;
       }
+
+      #black, #e-center, #b-center-bottom, #b-center-top
+      {
+        fill: transparent;
+      }
+
+      #b-body, #e-body, #e-mark
+      {
+        transform-origin: center center;
+        transform: scale(1.4);
+      }
     </style>
   </defs>
   <g id="behance">

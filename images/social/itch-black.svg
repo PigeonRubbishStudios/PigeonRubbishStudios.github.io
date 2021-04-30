@@ -4,6 +4,17 @@
       .cls-1 {
         fill: #fff;
       }
+
+      #itch-background
+      {
+        fill: transparent;
+      }
+
+      #itch-logo
+      {
+        transform-origin: center center;
+        transform: scale(1.15);
+      }
     </style>
   </defs>
   <g id="itch.io">

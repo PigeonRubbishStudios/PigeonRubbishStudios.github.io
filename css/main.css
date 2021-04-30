@@ -17,7 +17,7 @@ html, body {
 }
 
 body {
-  background-color: #202020;
+  background-color: #252525;
   font-family: Helvetica;
   /* background-image: url('../images/prs-images/background.jpg');
   background-size: cover;
@@ -91,8 +91,7 @@ ul {
 
 /* Nav Bar */
 header {
-  background-image: url("../images/prs-images/prs-header.svg");
-  background-size: cover;
+  background-color: #B20000;
   width: 100vw;
   min-height: 61px;
 }
@@ -122,17 +121,20 @@ header .desktop-nav .topnav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  height: 67px;
 }
 
 header .desktop-nav .topnav #prs-logo-nav {
-  width: 175px;
-  padding: 5% 0 0 0;
+  width: 218px;
+  padding: 5% 10px 0 10px;
+  margin-right: 5px;
 }
 
 header .desktop-nav .topnav a.nav-list {
@@ -143,17 +145,26 @@ header .desktop-nav .topnav a.nav-list {
   text-decoration: none;
   font-size: 20px;
   font-weight: 900;
-  padding: 19px 30px;
+  padding: 19px 0px;
+  max-width: 218px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 header .desktop-nav .topnav a.nav-list.active {
-  background-color: black;
-  color: #A32035;
+  background-color: #252525;
+  color: #B20000;
+}
+
+header .desktop-nav .topnav a.nav-list.active:last-child {
+  border-right: none;
 }
 
 header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
-  background-color: #6ABF4B;
-  color: #A32035;
+  background-color: #252525;
+  color: #B20000;
 }
 
 /* Home */
@@ -234,7 +245,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 
 /* Video Games */
 .game-section a .back-bar {
-  background-color: black;
+  background-color: #181818;
   width: 100%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -250,7 +261,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   font-weight: 900;
   font-style: normal;
   text-align: center;
-  color: #A32035;
+  color: #B20000;
   font-size: 50px;
   margin: 0;
   padding: 41.5 0;
@@ -320,7 +331,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background-color: #5a111d;
+  background-color: #4c0000;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -345,7 +356,6 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   text-align: left;
   color: white;
   font-size: 50px;
-  background-color: #5a111d;
   position: relative;
 }
 
@@ -375,14 +385,14 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   text-align: left;
   color: white;
   font-size: 25px;
-  background-color: #310a10;
+  background-color: #660000;
 }
 
 .game-section .collapse-margin .collapsible {
   font-family: Helvetica;
   font-weight: 900;
-  background-color: #231F20;
-  color: #A32035;
+  background-color: #202020;
+  color: #B20000;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -390,17 +400,17 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   text-align: left;
   outline: none;
   font-size: 15px;
-  border-bottom: 0.5px solid #310a10;
+  border-bottom: 0.5px solid #252525;
 }
 
 .game-section .collapse-margin .collapsible:hover {
-  background-color: #6ABF4B;
+  background-color: #181818;
 }
 
 .game-section .collapse-margin .collapsible:after {
   content: '+';
   font-size: 18px;
-  color: #A32035;
+  color: #B20000;
   float: right;
   margin-left: 5px;
 }
@@ -418,6 +428,8 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   background-color: #1e1e1e;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
 
 .game-section#fpdo-info, .game-section#sr-info, .game-section#ttt-info, .game-section#cc-info {
@@ -732,11 +744,11 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   max-width: 400px;
   width: 100%;
   max-height: 218.34px;
-  background-color: #313131;
-  border-top: 10px solid #353535;
-  border-bottom: 10px solid #2C2C2C;
-  border-left: 10px solid #2D2D2D;
-  border-right: 10px solid #333333;
+  background-color: #323232;
+  border-top: 10px solid #393939;
+  border-right: 10px solid #393939;
+  border-bottom: 10px solid #2a2a2a;
+  border-left: 10px solid #2a2a2a;
   margin-bottom: 0;
 }
 
@@ -761,11 +773,11 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 .resume-info .resume-flex .resume-layout .resume-box {
   max-width: 400px;
   width: 100%;
-  background-color: #9A2026;
-  border-top: 10px solid #A52328;
-  border-bottom: 10px solid #891D22;
-  border-left: 10px solid #8C1E22;
-  border-right: 10px solid #A12227;
+  background-color: #971b1b;
+  border-top: 10px solid #a41d1d;
+  border-right: 10px solid #a41d1d;
+  border-bottom: 10px solid #8a1818;
+  border-left: 10px solid #8a1818;
 }
 
 .resume-info .resume-flex .resume-layout .resume-box.space-right {
@@ -881,7 +893,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 }
 
 .resume-info .resume-flex .resume-layout .resume-link {
-  color: #6ABF4B;
+  color: white;
   font-weight: bold;
 }
 
@@ -893,21 +905,21 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 }
 
 .resume-info .resume-flex .resume-layout .resume-link .resume-link-box:hover {
-  background-color: #7a1a1f;
-  border-top: 10px solid #801b1e;
-  border-bottom: 10px solid #69171b;
-  border-left: 10px solid #571315;
-  border-right: 10px solid #6d181b;
+  background-color: #821717;
+  border-top: 10px solid #8f1919;
+  border-right: 10px solid #8f1919;
+  border-bottom: 10px solid #751515;
+  border-left: 10px solid #751515;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  color: #5aa040;
+  color: #f2f2f2;
 }
 
 /* Footer */
 footer {
   width: 100%;
   bottom: 0;
-  background-image: url("../images/prs-images/prs-header.svg");
+  background-color: #971b1b;
   background-size: cover;
 }
 
@@ -937,8 +949,8 @@ footer .footer-flex .footer-icons {
 }
 
 footer .footer-flex .footer-icons.footer-icons:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 /* Mobile */
@@ -988,16 +1000,22 @@ footer .footer-flex .footer-icons.footer-icons:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
     position: absolute;
-    background-color: #80192a;
+    background-color: #971b1b;
     z-index: 45;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   header .desktop-nav .topnav #prs-logo-nav {
     display: none;
   }
   header .desktop-nav .topnav a.nav-list {
     display: none;
-    width: 100%;
     text-align: left;
+    padding: 19px 30px;
+    max-width: 100vw;
+    width: 100%;
+    height: unset;
   }
   /* Home */
   .home-section {

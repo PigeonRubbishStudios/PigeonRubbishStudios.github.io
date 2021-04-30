@@ -8,6 +8,11 @@
       .cls-1 {
         fill-rule: evenodd;
       }
+
+      #github-background
+      {
+      fill: transparent;
+      }
     </style>
   </defs>
   <g id="github">

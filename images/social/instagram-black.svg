@@ -4,6 +4,11 @@
       .cls-1 {
         fill: #fff;
       }
+
+      #black-outer, #black-mid, #black-center
+      {
+        fill: transparent;
+      }
     </style>
   </defs>
   <g id="instagram">
