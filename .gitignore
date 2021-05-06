@@ -106,3 +106,6 @@ videos/._menu.mp4
 videos/._perception.mp4
 videos/._smuggler.mp4
 videos/._teeter.mp4
+*.DS_Store
+._.DS_Store
+.DS_Store
