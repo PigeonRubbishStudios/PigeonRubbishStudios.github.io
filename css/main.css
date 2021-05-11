@@ -356,7 +356,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 .game-section .collapse-margin .code-header-flex .code-flex .code-header {
   margin: 0;
   padding: 0.5% 1%;
-  font-family: upgrade,sans-serif;
+  font-family: nunito-sans,sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: left;
@@ -385,7 +385,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 .game-section .collapse-margin .type-header {
   margin: 0;
   padding: 0.2% 1%;
-  font-family: upgrade,sans-serif;
+  font-family: nunito-sans,sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: left;

@@ -24,7 +24,7 @@ for (i = 0; i < coll.length; i++)
     if (active == true) 
     {
       active = false;
-      tl.to(content, {height: 0, duration: 1.5});
+      tl.to(content, {height: 0, duration: 0.5});
       tl.to(content, {display: "none", duration: 0});
       tl.to(content, {height: "", duration: 0});
     } 
