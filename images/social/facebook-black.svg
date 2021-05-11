@@ -12,12 +12,16 @@
 
       #facebook-background
       {
-        fill: transparent;
+        fill: white;
+        transform-origin: center center;
+        transform: scale(0.75);
       }
 
       #f-body
       {
-        transform: translateY(-10px);
+        transform-origin: center center;
+        transform: scale(0.9);
+        fill: #981b1b;
       }
     </style>
   </defs>

@@ -18,7 +18,7 @@ html, body {
 
 body {
   background-color: #252525;
-  font-family: Helvetica;
+  font-family: nunito-sans,sans-serif;
   /* background-image: url('../images/prs-images/background.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ ul {
 }
 
 .section-headings {
-  font-family: upgrade,sans-serif;
+  font-family: nunito-sans,sans-serif;
   font-weight: 900;
   font-style: normal;
   text-align: center;
@@ -208,7 +208,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 .home-section .section-info a .link-box h1 {
   position: absolute;
   font-size: 12vw;
-  margin: 0;
+  margin: 0 0 0 30px;
   width: 100vw;
   bottom: 0;
   -webkit-filter: drop-shadow(5px 5px 1px black);
@@ -237,6 +237,11 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   background-image: url("/images/artwork/motion/perception-big.png");
   background-size: cover;
   background-position: center;
+}
+
+.home-section#sec4 .section-info {
+  border-left: 2px inset black;
+  border-right: 2px inset black;
 }
 
 .home-section:hover .section-info {
