@@ -208,7 +208,8 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 .home-section .section-info a .link-box h1 {
   position: absolute;
   font-size: 12vw;
-  margin: 0 0 0 30px;
+  margin: 0;
+  padding-left: 30px;
   width: 100vw;
   bottom: 0;
   -webkit-filter: drop-shadow(5px 5px 1px black);

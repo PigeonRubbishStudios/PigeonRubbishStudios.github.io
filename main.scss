@@ -236,7 +236,8 @@ header
         {
           position: absolute;
           font-size: 12vw;
-          margin: 0 0 0 30px;
+          margin: 0;
+          padding-left: 30px;
           width: 100vw;
           bottom: 0;
           filter: drop-shadow(5px 5px 1px black);
