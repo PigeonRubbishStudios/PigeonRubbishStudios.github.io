@@ -153,6 +153,14 @@ header .desktop-nav .topnav a.nav-list {
   transition: all 0.4s ease-in-out;
 }
 
+header .desktop-nav .topnav a.nav-list:not(:last-child) {
+  margin: 0 1px;
+}
+
+header .desktop-nav .topnav a.nav-list:last-child {
+  margin-left: 1px;
+}
+
 header .desktop-nav .topnav a.nav-list.active {
   background-color: #252525;
   color: #B20000;

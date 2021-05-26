@@ -8,13 +8,15 @@
       #facebook
       {
         overflow: visible;
+        <!-- clip-path: circle(50% at 50% 50%); -->
       }
 
       #facebook-background
       {
         fill: white;
         transform-origin: center center;
-        transform: scale(0.75);
+        transform: scale(0.8);
+        clip-path: circle(50% at 50% 50%);
       }
 
       #f-body
