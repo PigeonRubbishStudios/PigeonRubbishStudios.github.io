@@ -70,7 +70,8 @@ ul
   font-weight: 900;
   font-style: normal;
   text-align: center;
-  color: white;
+  color: rgb(70, 70, 70);
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
   font-size: 50px;
   margin: 0.83em auto 0 auto;
   max-width: 1150px;
@@ -324,7 +325,11 @@ header
   {
     .back-bar
     {
-      background-color: $darkGrey;
+      background-color: $mutedGrey;
+      border-top: 10px solid $highlightGrey;
+      border-right: 10px solid $highlightGrey;
+      border-bottom: 10px solid $shadowGrey;
+      border-left: 10px solid $shadowGrey;
       width: 100%;
       transition: all 0.4s ease;
 
@@ -335,11 +340,12 @@ header
 
       .back-heading
       {
-        font-family: upgrade,sans-serif;
+        font-family: nunito-sans,sans-serif;
         font-weight: 900;
         font-style: normal;
         text-align: center;
-        color: $klpRed;
+        color: rgb(70, 70, 70);
+        text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
         font-size: 50px;
         margin: 0;
         padding: 41.5 0;
