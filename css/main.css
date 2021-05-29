@@ -46,8 +46,8 @@ ul {
   font-weight: 900;
   font-style: normal;
   text-align: center;
-  color: #464646;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
+  color: #971b1b;
+  text-shadow: 0px -2px 0px #cc0000, 0px 2px 0px #4c0000;
   font-size: 50px;
   margin: 0.83em auto 0 auto;
   max-width: 1150px;
@@ -288,6 +288,11 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
           transform: scale(1.02);
 }
 
+.game-section a .back-bar:hover .back-heading {
+  color: #971b1b;
+  text-shadow: 0px -2px 0px #cc0000, 0px 2px 0px #4c0000;
+}
+
 .game-section a .back-bar .back-heading {
   font-family: nunito-sans,sans-serif;
   font-weight: 900;
@@ -298,6 +303,8 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   font-size: 50px;
   margin: 0;
   padding: 41.5 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .game-section .full-width {
