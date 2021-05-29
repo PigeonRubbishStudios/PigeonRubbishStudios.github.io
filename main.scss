@@ -72,6 +72,14 @@ ul
   text-align: center;
   color: white;
   font-size: 50px;
+  margin: 0.83em auto 0 auto;
+  max-width: 1150px;
+  width: 100%;
+  background-color: $mutedGrey;
+  border-top: 10px solid $highlightGrey;
+  border-right: 10px solid $highlightGrey;
+  border-bottom: 10px solid $shadowGrey;
+  border-left: 10px solid $shadowGrey;
 }
 
 .thumbnails
@@ -80,8 +88,14 @@ ul
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 auto;
   margin-bottom: 10rem;
+
+  padding: 75px 10px;
+  background-color: $mutedRed;
+  border-top: 10px solid $highlightRed;
+  border-right: 10px solid $highlightRed;
+  border-bottom: 10px solid $shadowRed;
+  border-left: 10px solid $shadowRed;
 
   .thumbnail-radius
   {
@@ -363,6 +377,14 @@ header
 
     .game-info
     {
+      background-color: $mutedRed;
+      border-top: 10px solid $highlightRed;
+      border-right: 10px solid $highlightRed;
+      border-bottom: 10px solid $shadowRed;
+      border-left: 10px solid $shadowRed;
+      height: fit-content;
+      padding: 0 20px;
+
       .game-info-text
       {
         max-width: 550px;
@@ -519,6 +541,15 @@ header
   top: 1150px;
   left: 50%;
   transform: translateX(-50%);
+
+  #itch-widget
+  {
+    background-color: $mutedGrey;
+    border-top: 10px solid $highlightGrey;
+    border-right: 10px solid $highlightGrey;
+    border-bottom: 10px solid $shadowGrey;
+    border-left: 10px solid $shadowGrey;
+  }
 }
 
 
@@ -584,12 +615,17 @@ header
   {
     margin-top: 20px;
     margin-bottom: 10%;
+    background-color: $mutedRed;
+    border-top: 10px solid $highlightRed;
+    border-right: 10px solid $highlightRed;
+    border-bottom: 10px solid $shadowRed;
+    border-left: 10px solid $shadowRed;
   
     .row
     {
       display: flex;
       flex-wrap: wrap;
-      padding: 0 10px;
+      padding: 20px 10px;
   
       .column
       {
@@ -1066,7 +1102,7 @@ footer
 
 
 /* Mobile */
-@media screen and (max-width: 945px) 
+@media screen and (max-width: 990px) 
 { 
   /* All Pages */
   .content-width
@@ -1152,6 +1188,13 @@ footer
 
 
   /* Video Games */
+  .game-thumbnails
+  {
+    .second-heading
+    {
+      margin-top: 50px;
+    }
+  }
   .thumbnails
   {
     margin-bottom: 5rem;
@@ -1185,6 +1228,7 @@ footer
     {
       .game-info
       {
+        margin-top: 20px;
         .game-info-text
         {
           text-align: center;
@@ -1212,6 +1256,7 @@ footer
   #itch-container
   {
     top: 925px;
+    margin-top: 10%;
 
     #itch-widget
     {
@@ -1253,6 +1298,13 @@ footer
 
 
   /* Motion Graphics */
+  .motion-headings
+  {
+    .second-heading
+    {
+      margin-top: 50px;
+    }
+  }
   .menu-content-width, .perception-content-width
   {
     margin-top: 60%;

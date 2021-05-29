@@ -54,6 +54,8 @@ var isOpera = typeof window.opr !== "undefined";
 var isEdge = winNav.userAgent.indexOf("Edge") > -1;
 var isiOSChrome = winNav.userAgent.match("CriOS");
 var tl = gsap.timeline();
+var gtl = gsap.timeline();
+var gameShown = false;
 
 
 // Function Call-Backs
@@ -169,137 +171,38 @@ function showSlides(n)
 }
 
 // Show Game
-function showGame(n)
+function toggleGame(n)
 {
-  if (n == 1)
-  {
-    $("#game-thumbnails").fadeOut("slow");
-
-    setTimeout(() => 
-    {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-
-      document.getElementById("game-thumbnails").style.display = "none";
-
-      $("#fpdo-info").fadeIn("slow");
+  var gameInfo = "#" + n;
   
-      document.getElementById("fpdo-info").style.display = "block";
-    }, 250);
+  if (gameShown == false)
+  {
+    gameShown = true;
+  
+    gtl.to(".game-thumbnails", {opacity: 0, duration: 0.75});
+    gtl.to(window, {scrollTo: 0, duration: 0.75}, "-=0.75");
+    gtl.to(".game-thumbnails", {display: "none", duration: 0});
+    gtl.to(gameInfo, {display: "block", duration: 0});
+    gtl.fromTo(gameInfo, {opacity: 0}, {opacity: 1, duration: 0.75});
+
+    if(gameInfo == "#cc-info")
+    {
+      gtl.to("#itch-container", {height: "fit-content", duration: 0.75}, "-=0.75");
+    }
   }
-  
-  if (n == 2)
+  else
   {
-    $("#game-thumbnails").fadeOut("slow");
-
-    setTimeout(() => 
-    {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-
-      document.getElementById("game-thumbnails").style.display = "none";
-
-      $("#sr-info").fadeIn("slow");
+    gameShown = false;
   
-      document.getElementById("sr-info").style.display = "block";
-    }, 250);
+    gtl.to(gameInfo, {opacity: 0, duration: 0.75});
+    if(gameInfo == "#cc-info")
+    {
+      gtl.to("#itch-container", {height: 0, duration: 0.75}, "-=0.75");
+    }
+    gtl.to(gameInfo, {display: "none", duration: 0});
+    gtl.to(".game-thumbnails", {display: "block", duration: 0});
+    gtl.fromTo(".game-thumbnails", {opacity: 0}, {opacity: 1, duration: 0.75});
   }
-  
-  if (n == 3)
-  {
-    $("#game-thumbnails").fadeOut("slow");
-
-    setTimeout(() => 
-    {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-       
-      document.getElementById("game-thumbnails").style.display = "none";
-
-      $("#ttt-info").fadeIn("slow");
-  
-      document.getElementById("ttt-info").style.display = "block";
-    }, 250);
-  } 
-
-  if (n == 4)
-  {
-    $("#game-thumbnails").fadeOut("slow");
-
-    setTimeout(() => 
-    {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-       
-      document.getElementById("game-thumbnails").style.display = "none";
-
-      $("#cc-info").fadeIn("slow");
-  
-      document.getElementById("cc-info").style.display = "block";
-      document.getElementById("itch-container").style.height = "fit-content";
-    }, 250);
-  } 
-}
-
-// Hide Game
-function hideGame(n)
-{
-  if (n == 1)
-  {
-    $("#fpdo-info").fadeOut("slow");
-
-    setTimeout(() => 
-    { 
-      document.getElementById("fpdo-info").style.display = "none";
-
-      $("#game-thumbnails").fadeIn("slow");
-  
-      document.getElementById("game-thumbnails").style.display = "block";
-    }, 250);
-  }
-  
-  if (n == 2)
-  {
-    $("#sr-info").fadeOut("slow");
-
-    setTimeout(() => 
-    { 
-      document.getElementById("sr-info").style.display = "none";
-
-      $("#game-thumbnails").fadeIn("slow");
-  
-      document.getElementById("game-thumbnails").style.display = "block";
-    }, 250);
-  } 
-
-  if (n == 3)
-  {
-    $("#ttt-info").fadeOut("slow");
-
-    setTimeout(() => 
-    { 
-      document.getElementById("ttt-info").style.display = "none";
-
-      $("#game-thumbnails").fadeIn("slow");
-  
-      document.getElementById("game-thumbnails").style.display = "block";
-    }, 250);
-  } 
-
-  if (n == 4)
-  {
-    $("#cc-info").fadeOut("slow");
-
-    setTimeout(() => 
-    { 
-      document.getElementById("cc-info").style.display = "none";
-
-      $("#game-thumbnails").fadeIn("slow");
-  
-      document.getElementById("game-thumbnails").style.display = "block";
-      document.getElementById("itch-container").style.height = "0";
-    }, 250);
-  } 
 }
 
 // Autoplay Motion Graphics Videos

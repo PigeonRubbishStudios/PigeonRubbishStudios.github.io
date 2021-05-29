@@ -48,6 +48,14 @@ ul {
   text-align: center;
   color: white;
   font-size: 50px;
+  margin: 0.83em auto 0 auto;
+  max-width: 1150px;
+  width: 100%;
+  background-color: #323232;
+  border-top: 10px solid #393939;
+  border-right: 10px solid #393939;
+  border-bottom: 10px solid #2a2a2a;
+  border-left: 10px solid #2a2a2a;
 }
 
 .thumbnails {
@@ -62,8 +70,13 @@ ul {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 auto;
   margin-bottom: 10rem;
+  padding: 75px 10px;
+  background-color: #971b1b;
+  border-top: 10px solid #a41d1d;
+  border-right: 10px solid #a41d1d;
+  border-bottom: 10px solid #8a1818;
+  border-left: 10px solid #8a1818;
 }
 
 .thumbnails .thumbnail-radius {
@@ -312,6 +325,18 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
           box-shadow: 5px 5px 20px black;
 }
 
+.game-section .game-flex .game-info {
+  background-color: #971b1b;
+  border-top: 10px solid #a41d1d;
+  border-right: 10px solid #a41d1d;
+  border-bottom: 10px solid #8a1818;
+  border-left: 10px solid #8a1818;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 20px;
+}
+
 .game-section .game-flex .game-info .game-info-text {
   max-width: 550px;
   width: 100%;
@@ -467,6 +492,14 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
           transform: translateX(-50%);
 }
 
+#itch-container #itch-widget {
+  background-color: #323232;
+  border-top: 10px solid #393939;
+  border-right: 10px solid #393939;
+  border-bottom: 10px solid #2a2a2a;
+  border-left: 10px solid #2a2a2a;
+}
+
 /* Interactive */
 #interactive-modal-section .modal {
   display: none;
@@ -515,6 +548,11 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 #artwork-modal-section .gallery {
   margin-top: 20px;
   margin-bottom: 10%;
+  background-color: #971b1b;
+  border-top: 10px solid #a41d1d;
+  border-right: 10px solid #a41d1d;
+  border-bottom: 10px solid #8a1818;
+  border-left: 10px solid #8a1818;
 }
 
 #artwork-modal-section .gallery .row {
@@ -523,7 +561,7 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 10px;
+  padding: 20px 10px;
 }
 
 #artwork-modal-section .gallery .row .column {
@@ -968,7 +1006,7 @@ footer .footer-flex .footer-icons.footer-icons:hover {
 }
 
 /* Mobile */
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 990px) {
   /* All Pages */
   .content-width {
     margin-bottom: 104px;
@@ -1039,6 +1077,9 @@ footer .footer-flex .footer-icons.footer-icons:hover {
     height: 25vh;
   }
   /* Video Games */
+  .game-thumbnails .second-heading {
+    margin-top: 50px;
+  }
   .thumbnails {
     margin-bottom: 5rem;
   }
@@ -1051,6 +1092,9 @@ footer .footer-flex .footer-icons.footer-icons:hover {
   }
   .game-section a .back-bar .back-heading {
     font-size: 30px;
+  }
+  .game-section .game-flex .game-info {
+    margin-top: 20px;
   }
   .game-section .game-flex .game-info .game-info-text {
     text-align: center;
@@ -1067,6 +1111,7 @@ footer .footer-flex .footer-icons.footer-icons:hover {
   }
   #itch-container {
     top: 925px;
+    margin-top: 10%;
   }
   #itch-container #itch-widget {
     width: 250px;
@@ -1088,6 +1133,9 @@ footer .footer-flex .footer-icons.footer-icons:hover {
     max-width: 90vw;
   }
   /* Motion Graphics */
+  .motion-headings .second-heading {
+    margin-top: 50px;
+  }
   .menu-content-width, .perception-content-width {
     margin-top: 60%;
   }

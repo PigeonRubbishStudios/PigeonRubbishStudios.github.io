@@ -72,13 +72,13 @@
 
                     <a class="nav-list" href="../../">Home</a>
 
-                    <a class="nav-list active" href="../video-games/">Video Games</a>
+                    <a class="nav-list active" href="../video-games/">Games</a>
 
                     <a class="nav-list" href="../interactive/">Interactive</a>
 
                     <a class="nav-list" href="../artwork/">Artwork</a>
 
-                    <a class="nav-list" href="../motion-graphics/">Motion Graphics</a>
+                    <a class="nav-list" href="../motion-graphics/">Motion</a>
 
                     <a class="nav-list" href="../about/">About</a>
 
@@ -88,7 +88,7 @@
 
         </header>
 
-        <section id="game-thumbnails">
+        <section class="game-thumbnails">
 
             <h1 class="section-headings">Xcode Games</h1>
 
@@ -96,31 +96,13 @@
 
                 <div>
 
-                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/fpdo-thumbnail.jpg" onclick="showGame(1)" class="hover-shadow"></a>
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/fpdo-thumbnail.jpg" onclick="toggleGame('fpdo-info')" class="hover-shadow"></a>
 
                 </div>
 
                 <div>
 
-                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/sr-thumbnail.jpg" onclick="showGame(2)" class="hover-shadow"></a>
-
-                </div>
-
-            </div>
-
-            <h1 class="section-headings second-heading">Unity Games</h1>
-
-            <div class="content-width thumbnails">
-
-                <div>
-
-                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/ttt-thumbnail.jpg" onclick="showGame(3)" class="hover-shadow"></a>
-
-                </div>
-
-                <div>
-
-                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/cc-thumbnail.jpg" onclick="showGame(4)" class="hover-shadow"></a>
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/sr-thumbnail.jpg" onclick="toggleGame('sr-info')" class="hover-shadow"></a>
 
                 </div>
 
@@ -128,11 +110,32 @@
 
         </section>
 
+        <section class="game-thumbnails">
+
+            <h1 class="section-headings second-heading">Unity Games</h1>
+
+            <div class="content-width thumbnails">
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/ttt-thumbnail.jpg" onclick="toggleGame('ttt-info')" class="hover-shadow"></a>
+
+                </div>
+
+                <div>
+
+                    <a href="javascript:void(0);"><img class="thumbnail-radius large-thumbnails" src="../../images/artwork/games/cc-thumbnail.jpg" onclick="toggleGame('cc-info')" class="hover-shadow"></a>
+
+                </div>
+
+            </div>
+        </section>
+
         <section id="fpdo-info" class="content-width game-section">
 
             <a href="javascript:void(0);">
 
-                <div class="back-bar" onclick="hideGame(1)">
+                <div class="back-bar" onclick="toggleGame('fpdo-info')">
 
                     <h1 class="back-heading">Back To All Games</h1>
 
@@ -263,7 +266,7 @@
         <section id="sr-info" class="content-width game-section">
 
             <a href="javascript:void(0);">
-                <div class="back-bar" onclick="hideGame(2)">
+                <div class="back-bar" onclick="toggleGame('sr-info')">
 
                     <h1 class="back-heading">Back To All Games</h1>
 
@@ -385,7 +388,7 @@
         <section id="ttt-info" class="content-width game-section">
 
             <a href="javascript:void(0);">
-                <div class="back-bar" onclick="hideGame(3)">
+                <div class="back-bar" onclick="toggleGame('ttt-info')">
 
                     <h1 class="back-heading">Back To All Games</h1>
 
@@ -509,7 +512,7 @@
         <section id="cc-info" class="content-width game-section">
 
             <a href="javascript:void(0);">
-                <div class="back-bar" onclick="hideGame(4)">
+                <div class="back-bar" onclick="toggleGame('cc-info')">
 
                     <h1 class="back-heading">Back To All Games</h1>
 
@@ -657,7 +660,7 @@
 
         <div id="itch-container">
 
-            <iframe id="itch-widget" frameborder="0" src="https://itch.io/embed/953446?linkback=true&amp;border_width=2&amp;bg_color=252525&amp;fg_color=eeeeee&amp;link_color=B20000&amp;border_color=020202" width="1000" height="169"><a href="https://pigeon-rubbish-studios.itch.io/cactical-climber-vr">Cactical Climber VR by Kyle Bolinger</a></iframe>
+            <iframe id="itch-widget" frameborder="0" src="https://itch.io/embed/953446?linkback=true&amp;border_width=0&amp;bg_color=323232&amp;fg_color=eeeeee&amp;link_color=B20000&amp;border_color=none" width="1000" height="169"><a href="https://pigeon-rubbish-studios.itch.io/cactical-climber-vr">Cactical Climber VR by Kyle Bolinger</a></iframe>
 
         </div>
 
