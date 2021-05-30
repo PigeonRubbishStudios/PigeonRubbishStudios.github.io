@@ -1,6 +1,10 @@
 /* Variables */
 $klpRed: #B20000;
 $klpGrey: #252525;
+$engraveGrey: #808080;
+
+$klpLighten: lighten($klpRed, 3%);
+$klpDarken: darken($klpRed, 3%);
 
 $mutedRed: desaturate($klpRed, 30%);
 $highlightRed: lighten($mutedRed, 3%);
@@ -16,16 +20,21 @@ $lightGrey: lighten($klpGrey, 5%);
 $darkRed: darken($klpRed, 20%);
 $darkGrey: darken($klpGrey, 5%);
 
+$highlightEngraved: rgba(256, 256, 256, 0.5);
+$shadowEngraved: rgba(0, 0, 0, 0.5);
+
+
+
 /* All Pages */
 *
 {
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar
-{
-  display: none;
-}
+// ::-webkit-scrollbar
+// {
+//   display: none;
+// }
 
 html, body
 {
@@ -122,6 +131,11 @@ ul
 .second-heading
 {
   margin-top: -75px;
+}
+
+.modal
+{
+  opacity: 0;
 }
 
 
@@ -964,13 +978,16 @@ header
             margin-bottom: 17.34px;
             #email-link
             {
-              color: #b7b7b7;
+              color: rgba(128, 128, 128, 0.25);
+              text-shadow: 0px 0.5px 0px rgba(256, 256, 256, 0.5), 0px -0.5px 0px rgba(0, 0, 0, 0.5);
               font-weight: 900;
-              transition: color 0.2s ease-in-out;
+              transition: all 0.4s ease-in-out;
+              mix-blend-mode: hard-light;
 
               &:hover
               {
-                color: #7c7c7c;
+                text-shadow: 0px -0.5px 0px rgba(256, 256, 256, 0.5), 0px 0.5px 0px rgba(0, 0, 0, 0.5);
+                mix-blend-mode: color-dodge;
               }
             }
           }
@@ -1051,14 +1068,22 @@ header
 
       .resume-link
       {
-        color: white;
+        color: rgba(128, 128, 128, 0.25);
+        text-shadow: 0px 0.5px 0px rgba(256, 256, 256, 0.5), 0px -0.5px 0px rgba(0, 0, 0, 0.5);
         font-weight: bold;
+        font-family: nunito-sans, sans-serif;
 
         .resume-link-box
         {
           text-align: center;
           margin-top: 20px;
           transition: all 0.4s ease;
+
+          p
+          {
+            mix-blend-mode: hard-light;
+            margin: 0;
+          }
 
           &:hover
           {
@@ -1069,7 +1094,12 @@ header
             border-left: 10px solid darken($shadowRed, 5%);
             
             transform: scale(1.2);
-            color: darken(white, 5%);
+
+            p
+            {
+              text-shadow: 0px -0.5px 0px rgba(256, 256, 256, 0.5), 0px 0.5px 0px rgba(0, 0, 0, 0.5);
+              mix-blend-mode: color-dodge;
+            }
           }
         }
       }

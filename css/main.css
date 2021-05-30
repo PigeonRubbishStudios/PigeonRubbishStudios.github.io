@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 html, body {
   position: relative;
   width: 100vw;
@@ -101,6 +97,10 @@ ul {
 
 .second-heading {
   margin-top: -75px;
+}
+
+.modal {
+  opacity: 0;
 }
 
 /* Nav Bar */
@@ -881,14 +881,17 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 }
 
 .resume-info .resume-flex .resume-layout .resume-box .resume-body.about-text #email-link {
-  color: #b7b7b7;
+  color: rgba(128, 128, 128, 0.25);
+  text-shadow: 0px 0.5px 0px rgba(255, 255, 255, 0.5), 0px -0.5px 0px rgba(0, 0, 0, 0.5);
   font-weight: 900;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  mix-blend-mode: hard-light;
 }
 
 .resume-info .resume-flex .resume-layout .resume-box .resume-body.about-text #email-link:hover {
-  color: #7c7c7c;
+  text-shadow: 0px -0.5px 0px rgba(255, 255, 255, 0.5), 0px 0.5px 0px rgba(0, 0, 0, 0.5);
+  mix-blend-mode: color-dodge;
 }
 
 .resume-info .resume-flex .resume-layout .resume-box .resume-body .bold {
@@ -958,8 +961,10 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 }
 
 .resume-info .resume-flex .resume-layout .resume-link {
-  color: white;
+  color: rgba(128, 128, 128, 0.25);
+  text-shadow: 0px 0.5px 0px rgba(255, 255, 255, 0.5), 0px -0.5px 0px rgba(0, 0, 0, 0.5);
   font-weight: bold;
+  font-family: nunito-sans, sans-serif;
 }
 
 .resume-info .resume-flex .resume-layout .resume-link .resume-link-box {
@@ -967,6 +972,11 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   margin-top: 20px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.resume-info .resume-flex .resume-layout .resume-link .resume-link-box p {
+  mix-blend-mode: hard-light;
+  margin: 0;
 }
 
 .resume-info .resume-flex .resume-layout .resume-link .resume-link-box:hover {
@@ -977,7 +987,11 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   border-left: 10px solid #751515;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  color: #f2f2f2;
+}
+
+.resume-info .resume-flex .resume-layout .resume-link .resume-link-box:hover p {
+  text-shadow: 0px -0.5px 0px rgba(255, 255, 255, 0.5), 0px 0.5px 0px rgba(0, 0, 0, 0.5);
+  mix-blend-mode: color-dodge;
 }
 
 /* Footer */

@@ -54,6 +54,7 @@ var isOpera = typeof window.opr !== "undefined";
 var isEdge = winNav.userAgent.indexOf("Edge") > -1;
 var isiOSChrome = winNav.userAgent.match("CriOS");
 var tl = gsap.timeline();
+var mtl = gsap.timeline();
 var gtl = gsap.timeline();
 var gameShown = false;
 
@@ -101,34 +102,21 @@ function reloadDeer()
 // Open the Modal
 function openModal() 
 {
-  document.getElementById("myModal").style.display = "block";
-  
-  
+  mtl.to("#myModal", {display: "block", duration: 0});
+  mtl.to("#myModal", {opacity: 1, duration: 0.75});
+
+  // document.getElementById("myModal").style.display = "block";
 
   scrollLock.disablePageScroll();
-
-  // if (slideIndex == 3 || slideIndex == 4)
-  // {
-  //   if (isiOSChrome)
-  //   {
-  //     null
-  //   }
-  //   else if
-  //   (isChromium !== null && typeof isChromium !== "undefined" && vendorName === "Google Inc." && isOpera === false && isEdge === false)
-  //   {
-  //     alert("If map symbols do not load, right click on the map and select \"Reload Frame\"");
-  //   }
-  //   else
-  //   {
-  //     null
-  //   }
-  // }
 }
 
 // Close the Modal
 function closeModal() 
 {
-  document.getElementById("myModal").style.display = "none";
+  mtl.to("#myModal", {opacity: 0, duration: 0.75});
+  mtl.to("#myModal", {display: "none", duration: 0});
+
+  // document.getElementById("myModal").style.display = "none";
 
   scrollLock.enablePageScroll();
 }
