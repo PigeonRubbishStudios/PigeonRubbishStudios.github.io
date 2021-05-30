@@ -105,8 +105,6 @@ function openModal()
   mtl.to("#myModal", {display: "block", duration: 0});
   mtl.to("#myModal", {opacity: 1, duration: 0.75});
 
-  // document.getElementById("myModal").style.display = "block";
-
   scrollLock.disablePageScroll();
 }
 
@@ -115,8 +113,6 @@ function closeModal()
 {
   mtl.to("#myModal", {opacity: 0, duration: 0.75});
   mtl.to("#myModal", {display: "none", duration: 0});
-
-  // document.getElementById("myModal").style.display = "none";
 
   scrollLock.enablePageScroll();
 }
@@ -215,5 +211,3 @@ function playMenu(n)
   }
 
 }
-
-

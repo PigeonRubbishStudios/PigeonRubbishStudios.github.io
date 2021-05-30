@@ -84,14 +84,20 @@ ul {
   border-radius: 5%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -webkit-box-shadow: 5px 5px 20px black;
-          box-shadow: 5px 5px 20px black;
+  border-top: 5px solid #751515;
+  border-right: 5px solid #751515;
+  border-bottom: 5px solid #ba2121;
+  border-left: 5px solid #ba2121;
 }
 
 .thumbnails .thumbnail-radius:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border-radius: 0%;
+  border-bottom: 5px solid #751515;
+  border-left: 5px solid #751515;
+  border-top: 5px solid #ba2121;
+  border-right: 5px solid #ba2121;
 }
 
 .thumbnails .small-thumbnails {
@@ -105,6 +111,38 @@ ul {
 
 .modal {
   opacity: 0;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 1150px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  overflow-y: hidden;
+}
+
+.modal-content .mySlides {
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal-content .mySlides .artwork-full {
+  max-width: 100%;
+  max-height: 90vh;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 /* Nav Bar */
@@ -522,7 +560,6 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 35px;
   left: 0;
   top: 0;
   width: 100%;
@@ -547,18 +584,15 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 }
 
 #interactive-modal-section .modal .modal-content {
-  position: relative;
   max-width: 800px;
   width: 100%;
-  max-height: 540px;
-  height: 50vw;
-  margin-bottom: 5%;
 }
 
 #interactive-modal-section .modal .modal-content .mySlides {
   display: none;
   width: 100%;
-  height: 100%;
+  max-height: 540px;
+  height: 50vw;
 }
 
 /* Artwork */
@@ -593,13 +627,31 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  border-top: 5px solid #751515;
+  border-right: 5px solid #751515;
+  border-bottom: 5px solid #ba2121;
+  border-left: 5px solid #ba2121;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#artwork-modal-section .gallery .row .column img.red-panda {
+  background-color: #971b1b;
+}
+
+#artwork-modal-section .gallery .row .column img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-bottom: 5px solid #751515;
+  border-left: 5px solid #751515;
+  border-top: 5px solid #ba2121;
+  border-right: 5px solid #ba2121;
 }
 
 #artwork-modal-section .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 35px;
   left: 0;
   top: 0;
   width: 100%;
@@ -627,9 +679,9 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   position: relative;
   max-width: 1150px;
   width: 100%;
-  max-height: 540px;
-  height: 50vw;
-  margin-bottom: 5%;
+  height: 100%;
+  margin-bottom: 0;
+  overflow-y: hidden;
 }
 
 #artwork-modal-section .modal .modal-content .mySlides {
@@ -646,6 +698,8 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
 #artwork-modal-section .modal .modal-content .mySlides .artwork-full {
   max-width: 100%;
   max-height: 90vh;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
 
 /* Motion Graphics */
@@ -1038,10 +1092,6 @@ footer .footer-flex .footer-icons.footer-icons:hover {
 
 /* Mobile */
 @media screen and (max-width: 990px) {
-  /* All Pages */
-  .content-width {
-    margin-bottom: 104px;
-  }
   /* Nav Bar */
   header .mobile-nav-flex {
     display: -webkit-box;
@@ -1063,13 +1113,14 @@ footer .footer-flex .footer-icons.footer-icons:hover {
   header .mobile-nav-flex #prs-logo {
     display: block;
     z-index: 100;
-    padding: 2% 0 0 2%;
+    padding-top: 2%;
+    margin-left: 15px;
   }
   header .mobile-nav-flex .menu-icon {
     float: right;
     display: block;
     z-index: 1;
-    padding: 0 2% 0 0;
+    padding: 0 6% 0 0;
   }
   header .desktop-nav .topnav {
     display: -webkit-box;
@@ -1099,6 +1150,7 @@ footer .footer-flex .footer-icons.footer-icons:hover {
     max-width: 100vw;
     width: 100%;
     height: unset;
+    border-bottom: 1.5px solid #B20000;
   }
   header .desktop-nav .topnav a.nav-list:last-child {
     margin-left: 0;
@@ -1148,20 +1200,16 @@ footer .footer-flex .footer-icons.footer-icons:hover {
     width: 250px;
   }
   /* Interactive */
-  #modal-section .close {
-    margin-top: -0.5%;
-    margin-right: -5%;
+  #interactive-modal-section .modal .modal-content .mySlides {
+    height: 75vw;
   }
-  #modal-section .modal-content {
-    min-height: 75vw;
-  }
-  #modal-section .modal-content .mySlides {
-    margin-top: 50%;
+  #interactive-modal-section .modal .modal-content .mySlides iframe {
+    padding: 0 5%;
   }
   /* Artwork */
   .artwork-full {
     height: unset;
-    max-width: 90vw;
+    padding: 0 5%;
   }
   /* Motion Graphics */
   .motion-headings .second-heading {
@@ -1223,35 +1271,4 @@ footer .footer-flex .footer-icons.footer-icons:hover {
             flex: 100%;
     max-width: 100%;
   }
-}
-
-/* Red Panda WIP */
-.flex-wip {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wip-text {
-  color: white;
-  font-family: Helvetica;
-  font-size: 50px;
-  text-align: center;
-  max-width: 500px;
-  width: 100%;
-}
-
-.red-panda {
-  max-width: 350px;
-  width: 100%;
 }
