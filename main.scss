@@ -751,6 +751,9 @@ header
       right: 25px;
       font-size: 35px;
       font-weight: bold;
+      width: 40px;
+      text-align: center;
+      z-index: 550px;
 
       &:hover, &:focus 
       {
@@ -759,6 +762,34 @@ header
         cursor: pointer;
       }
     }
+
+    .arrows-div
+      {
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+        top: 50%;
+        transform: translateY(-50%);
+
+
+        .arrows-flex
+        {
+          display: flex;
+          justify-content: space-between;
+
+          .arrows
+          {
+            color: white;
+            font-family: nunito-sans,sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 50px;
+            transform: scaleY(2);
+            margin: 0;
+            padding: 0 75px;
+          }
+        }
+      }
 
     .modal-content 
     {
@@ -770,6 +801,8 @@ header
       height: 100%;
       margin-bottom: 0;
       overflow-y: hidden;
+
+      
 
       .mySlides 
       {

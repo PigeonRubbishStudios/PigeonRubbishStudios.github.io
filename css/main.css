@@ -667,12 +667,45 @@ header .desktop-nav .topnav a.nav-list:hover:not(:first-child) {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  width: 40px;
+  text-align: center;
+  z-index: 550px;
 }
 
 #artwork-modal-section .modal .close:hover, #artwork-modal-section .modal .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
+}
+
+#artwork-modal-section .modal .arrows-div {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#artwork-modal-section .modal .arrows-div .arrows-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#artwork-modal-section .modal .arrows-div .arrows-flex .arrows {
+  color: white;
+  font-family: nunito-sans,sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+  -webkit-transform: scaleY(2);
+          transform: scaleY(2);
+  margin: 0;
+  padding: 0 75px;
 }
 
 #artwork-modal-section .modal .modal-content {
