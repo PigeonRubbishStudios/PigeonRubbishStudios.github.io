@@ -9,10 +9,10 @@ html, body {
   height: 100%;
   background-color: black;
   overflow: hidden;
+  position: relative;
 }
 
 body {
-  position: relative;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -23,6 +23,8 @@ body {
 
 div {
   position: absolute;
+  max-width: 305px;
+  width: 100%;
   left: 50%;
   top: 40%;
   -webkit-transform: translate(-50%, -50%);
@@ -55,7 +57,7 @@ div p {
   margin-top: 10%;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
-  color: white;
+  color: grey;
   font-size: 20px;
   opacity: 0;
   -webkit-transform: translateY(10%);
@@ -64,13 +66,36 @@ div p {
 
 img {
   position: absolute;
-  max-width: 375px;
+  max-width: 305px;
   width: 100%;
   bottom: 15%;
-  left: 57%;
-  -webkit-clip-path: circle(25% at 45% 50%);
-          clip-path: circle(25% at 45% 50%);
+  left: 50%;
+  -webkit-clip-path: circle(30% at 50% 50%);
+          clip-path: circle(30% at 50% 50%);
   -webkit-transform: translate(-50%, 10%);
           transform: translate(-50%, 10%);
   opacity: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+  width: 100vw;
+  mix-blend-mode: difference;
+}
+
+footer p {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: green;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  img {
+    bottom: 7%;
+  }
 }
