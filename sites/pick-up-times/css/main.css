@@ -1,0 +1,60 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  width: 360pt;
+  height: 169pt;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: difference;
+  text-shadow: 2px 2px black;
+}
+
+.main .weekday #day {
+  font-family: 'Wendy One', sans-serif;
+  color: pink;
+  font-size: 12vw;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.main .times {
+  margin-top: 2%;
+  height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .times h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 6vw;
+}
