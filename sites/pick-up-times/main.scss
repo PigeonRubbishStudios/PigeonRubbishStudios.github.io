@@ -31,12 +31,9 @@ body
 
 .main
 {
-    // position: absolute;
     height: 100%;
     width: 100%;
-    // left: 50%;
-    // top: 4%;
-    // transform: translateX(-50%);
+    margin-top: 3%;
     mix-blend-mode: difference;
     text-shadow: 2px 2px black;
 
@@ -44,18 +41,18 @@ body
     {
         #day
         {
+            height: 70px;
             font-family: 'Wendy One', sans-serif;
             color: pink;
             font-size: 12vw;
             transform: translateY(10%);
-            
         }
     }
 
     .times
     {
-        margin-top: 2%;
-        height: 105px;
+        // margin-top: 2%;
+        height: 135px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

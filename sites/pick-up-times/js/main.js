@@ -20,14 +20,14 @@ else if (dayName == 1)
     document.getElementById("class2").style.display = "none";
     document.getElementById("class3").style.display = "none";
 }
-else if (dayName == 3)
+else if (dayName == 2)
 {
     document.body.style.background = "url('https://pigeonrubbishstudios.github.io/sites/pick-up-times/images/7.jpg')";
     document.getElementById("class1").innerHTML = "9:00–11:50";
     document.getElementById("class2").innerHTML = "13:00–15:00";
     document.getElementById("class3").style.display = "none";
 }
-else if (dayName == 2)
+else if (dayName == 3)
 {
     document.body.style.background = "url('https://pigeonrubbishstudios.github.io/sites/pick-up-times/images/4.jpg')";
     document.getElementById("class1").innerHTML = "8:00–10:50";

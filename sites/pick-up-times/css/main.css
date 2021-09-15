@@ -25,11 +25,13 @@ body {
 .main {
   height: 100%;
   width: 100%;
+  margin-top: 3%;
   mix-blend-mode: difference;
   text-shadow: 2px 2px black;
 }
 
 .main .weekday #day {
+  height: 70px;
   font-family: 'Wendy One', sans-serif;
   color: pink;
   font-size: 12vw;
@@ -38,8 +40,7 @@ body {
 }
 
 .main .times {
-  margin-top: 2%;
-  height: 105px;
+  height: 135px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
