@@ -21,14 +21,18 @@ body {
 
 .main {
   position: relative;
-  height: 169pt;
+  height: 379pt;
   width: 100%;
   margin-top: 3%;
   mix-blend-mode: difference;
   text-shadow: 2px 2px black;
 }
 
-.main .weekday #day {
+.main .container .weekday {
+  margin-top: 70%;
+}
+
+.main .container .weekday #day {
   height: 70px;
   font-family: 'Wendy One', sans-serif;
   color: pink;
@@ -38,7 +42,7 @@ body {
   margin: 0;
 }
 
-.main .times {
+.main .container .times {
   margin-top: -5%;
   height: 105px;
   display: -webkit-box;
@@ -53,7 +57,7 @@ body {
           justify-content: space-evenly;
 }
 
-.main .times h2 {
+.main .container .times h2 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   color: white;

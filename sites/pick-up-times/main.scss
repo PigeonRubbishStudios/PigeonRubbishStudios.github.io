@@ -29,39 +29,44 @@ body
 .main
 {
     position: relative;
-    height: 169pt;
+    height: 379pt;
     width: 100%;
     margin-top: 3%;
     mix-blend-mode: difference;
     text-shadow: 2px 2px black;
 
-    .weekday
+    .container
     {
-        #day
+        .weekday
         {
-            height: 70px;
-            font-family: 'Wendy One', sans-serif;
-            color: pink;
-            font-size: 12vw;
-            transform: translateY(10%);
-            margin: 0;
+            margin-top: 70%;
+
+            #day
+            {
+                height: 70px;
+                font-family: 'Wendy One', sans-serif;
+                color: pink;
+                font-size: 12vw;
+                transform: translateY(10%);
+                margin: 0;
+            }
         }
-    }
 
-    .times
-    {
-        margin-top: -5%;
-        height: 105px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-        h2
+        .times
         {
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 700;
-            color: white;
-            font-size: 6vw;
+            margin-top: -5%;
+            height: 105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h2
+            {
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 700;
+                color: white;
+                font-size: 6vw;
+            }
         }
     }
 
