@@ -6,6 +6,8 @@ var challengeOption;
 var switchShow = 1;
 var challengesElements = document.getElementsByClassName("Challenges");
 var challengeLength = challengesElements.length;
+var dailyChallengesDiv = document.getElementById("dailyChallengesDiv");
+var weeklyChallengesDiv = document.getElementById("weeklyChallengesDiv");
 
 if (localStorage.getItem("unitsDict") != null)
 {
@@ -29,6 +31,13 @@ const firstDaily = document.querySelector('#FirstDaily');
 const secondDaily = document.querySelector('#SecondDaily');
 const thirdDaily = document.querySelector('#ThirdDaily');
 
+const firstWeekly = document.querySelector('#FirstWeekly');
+const secondWeekly = document.querySelector('#SecondWeekly');
+const thirdWeekly = document.querySelector('#ThirdWeekly');
+const fourthWeekly = document.querySelector('#FourthWeekly');
+const fifthWeekly = document.querySelector('#FifthWeekly');
+const sixthWeekly = document.querySelector('#SixthWeekly');
+
 firstDaily.addEventListener('change', (event) => 
 {
    savedChallengesDict["FirstDaily"] = firstDaily.value;
@@ -50,6 +59,49 @@ thirdDaily.addEventListener('change', (event) =>
     console.log(`Saved with a value of ${thirdDaily.value}`);
 });
 
+
+firstWeekly.addEventListener('change', (event) => 
+{
+   savedChallengesDict["FirstWeekly"] = firstWeekly.value;
+   localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
+   console.log(`Saved with a value of ${firstWeekly.value}`);
+});
+
+secondWeekly.addEventListener('change', (event) => 
+{
+    savedChallengesDict["SecondWeekly"] = secondWeekly.value;
+    localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
+    console.log(`Saved with a value of ${secondWeekly.value}`);
+});
+
+thirdWeekly.addEventListener('change', (event) => 
+{
+    savedChallengesDict["ThirdWeekly"] = thirdWeekly.value;
+    localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
+    console.log(`Saved with a value of ${thirdWeekly.value}`);
+});
+
+fourthWeekly.addEventListener('change', (event) => 
+{
+   savedChallengesDict["FourthWeekly"] = fourthWeekly.value;
+   localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
+   console.log(`Saved with a value of ${fourthWeekly.value}`);
+});
+
+fifthWeekly.addEventListener('change', (event) => 
+{
+    savedChallengesDict["FifthWeekly"] = fifthWeekly.value;
+    localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
+    console.log(`Saved with a value of ${fifthWeekly.value}`);
+});
+
+sixthWeekly.addEventListener('change', (event) => 
+{
+    savedChallengesDict["SixthWeekly"] = sixthWeekly.value;
+    localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
+    console.log(`Saved with a value of ${sixthWeekly.value}`);
+});
+
 loadSaved();
 
 function loadSaved()
@@ -65,6 +117,13 @@ function loadSaved()
     document.getElementById('FirstDaily').value = savedChallengesDict["FirstDaily"];
     document.getElementById('SecondDaily').value = savedChallengesDict["SecondDaily"];
     document.getElementById('ThirdDaily').value = savedChallengesDict["ThirdDaily"];
+
+    document.getElementById('FirstWeekly').value = savedChallengesDict["FirstWeekly"];
+    document.getElementById('SecondWeekly').value = savedChallengesDict["SecondWeekly"];
+    document.getElementById('ThirdWeekly').value = savedChallengesDict["ThirdWeekly"];
+    document.getElementById('FourthWeekly').value = savedChallengesDict["FourthWeekly"];
+    document.getElementById('FifthWeekly').value = savedChallengesDict["FifthWeekly"];
+    document.getElementById('SixthWeekly').value = savedChallengesDict["SixthWeekly"];
 }
 
 async function setCell(i)
@@ -157,6 +216,13 @@ function clearSaves()
     document.getElementById('FirstDaily').value = -1;
     document.getElementById('SecondDaily').value = -1;
     document.getElementById('ThirdDaily').value = -1;
+
+    document.getElementById('FirstWeekly').value = -1;
+    document.getElementById('SecondWeekly').value = -1;
+    document.getElementById('ThirdWeekly').value = -1;
+    document.getElementById('FourthWeekly').value = -1;
+    document.getElementById('FifthWeekly').value = -1;
+    document.getElementById('SixthWeekly').value = -1;
     console.log("Data Cleared");
 }
 
@@ -169,5 +235,38 @@ function fadeElements(n, i)
     else
     {
         document.getElementById(i).style.opacity = 0.25;
+    }
+}
+
+const tabSelector = document.querySelector('#challengeTabs');
+
+tabSelector.addEventListener('change', (event) => 
+{
+    selectTabs();
+});
+
+selectTabs();
+
+function selectTabs()
+{
+    var values = $('#challengeTabs').val();
+
+    if (values == '0') 
+    {
+        dailyChallengesDiv.style.display = "block";
+        weeklyChallengesDiv.style.display = "none";
+        console.log("Daily");
+    } 
+    else if (values == '1')
+    {
+        dailyChallengesDiv.style.display = "none";
+        weeklyChallengesDiv.style.display = "block";
+        console.log("Weekly");
+    }
+    else
+    {
+        dailyChallengesDiv.style.display = "block";
+        weeklyChallengesDiv.style.display = "block";
+        console.log("Both");
     }
 }

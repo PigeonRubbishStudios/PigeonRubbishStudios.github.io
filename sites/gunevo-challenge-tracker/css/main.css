@@ -12,12 +12,13 @@
 html, body {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   font-family: sans-serif;
 }
 
 body {
+  position: relative;
   background-color: #141419;
 }
 
@@ -39,11 +40,26 @@ img {
 }
 
 .content-width {
-  max-width: 1150px;
+  position: relative;
+  max-width: 95vw;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+.flexDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #challengeTabs {
@@ -85,11 +101,19 @@ img {
   background: #f8ed1a linear-gradient(0deg, #f8ed1a 0%, #f8ed1a 100%);
 }
 
+#dailyChallengesDiv, #weeklyChallengesDiv {
+  display: none;
+}
+
 label {
   color: white;
   text-align: center;
   font-size: 40pt;
   font-family: sans-serif;
+}
+
+.challengesDiv {
+  margin-top: 10px;
 }
 
 .DailyChallenges {
@@ -184,8 +208,12 @@ label {
   background-color: #141419;
 }
 
+.extraSpace {
+  width: 100vw;
+  height: 200px;
+}
+
 .clearButton {
-  margin-top: 20px;
   color: #141419;
   background-color: #f8ed1a;
   width: 100px;
@@ -193,7 +221,15 @@ label {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  width: 100vw;
   color: white;
+}
+
+.footerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

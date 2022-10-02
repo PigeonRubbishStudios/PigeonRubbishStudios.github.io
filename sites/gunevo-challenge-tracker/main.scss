@@ -21,13 +21,15 @@ html, body
 {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   font-family: sans-serif;
 }
 
 body
 {
+  // height: 100vh;
+  position: relative;
   background-color: $gunEvoGrey;
 }
 
@@ -54,11 +56,21 @@ img
 
 .content-width
 {
-  max-width: 1150px;
+  position: relative;
+  // max-width: 1150px;
+  max-width: 95vw;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+.flexDiv
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #challengeTabs
@@ -103,12 +115,27 @@ img
   }
 }
 
+#dailyChallengesDiv, #weeklyChallengesDiv
+{
+  display: none;
+}
+
+// #weeklyChallengesDiv
+// {
+//   margin-bottom: 100px;
+// }
+
 label
 {
   color:  white;
   text-align: center;
   font-size: 40pt;
   font-family: sans-serif;
+}
+
+.challengesDiv
+{
+  margin-top: 10px;
 }
 
 .DailyChallenges
@@ -215,9 +242,15 @@ label
   background-color: $gunEvoGrey;
 }
 
+.extraSpace
+{
+  width: 100vw;
+  height: 200px;
+}
+
 .clearButton
 {
-  margin-top: 20px;
+  // margin-top: 20px;
   color: $gunEvoGrey;
   background-color: $gunEvoYellow;
   width: 100px;
@@ -226,7 +259,15 @@ label
 
 footer
 {
-  position: absolute;
-  bottom: 0;
+  // position: absolute;
+  // bottom: 0;
+  width: 100vw;
+  // margin-top: 100px;
   color: white;
+}
+
+.footerFlex
+{
+  display: flex;
+  justify-content: space-between;
 }
