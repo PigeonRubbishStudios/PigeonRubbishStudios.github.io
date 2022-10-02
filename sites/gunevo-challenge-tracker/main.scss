@@ -84,6 +84,13 @@ img
     margin: 0;
   }
 
+  option:hover
+  {
+    background-color: $gunEvoYellow;
+    color: $gunEvoGrey;
+    cursor: pointer;
+  }
+
   option:checked
   {
     color: $gunEvoGrey;

@@ -68,6 +68,12 @@ img {
   margin: 0;
 }
 
+#challengeTabs option:hover {
+  background-color: #f8ed1a;
+  color: #141419;
+  cursor: pointer;
+}
+
 #challengeTabs option:checked {
   color: #141419;
   background: #f8ed1a -webkit-gradient(linear, left bottom, left top, from(#f8ed1a), to(#f8ed1a));
