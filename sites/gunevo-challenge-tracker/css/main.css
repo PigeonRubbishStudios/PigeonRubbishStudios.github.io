@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-.challengeList {
-  border: 1px solid rgba(248, 237, 26, 0.5);
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -18,18 +14,28 @@ html, body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  font-family: sans-serif;
 }
 
 body {
   background-color: #141419;
 }
 
+header {
+  width: 100vw;
+}
+
 a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
+td {
+  max-height: 90px;
+}
+
+img {
+  width: 90px;
+  height: 90px;
 }
 
 .content-width {
@@ -40,11 +46,91 @@ ul {
   margin-top: 20px;
 }
 
+#challengeTabs {
+  border: none;
+  background: transparent;
+  width: 100vw;
+  white-space: normal;
+  height: 69.5px;
+  outline: none;
+}
+
+#challengeTabs option {
+  width: 50%;
+  padding: 7px;
+  color: #1414197d;
+  border: 1px solid #000;
+  font-size: 2.9167rem;
+  text-align: center;
+  vertical-align: center;
+  background-color: #22222b;
+  display: inline-block;
+  margin: 0;
+}
+
+#challengeTabs option:checked {
+  color: #141419;
+  background: #f8ed1a -webkit-gradient(linear, left bottom, left top, from(#f8ed1a), to(#f8ed1a));
+  background: #f8ed1a linear-gradient(0deg, #f8ed1a 0%, #f8ed1a 100%);
+}
+
+#challengeTabs [multiple]:focus option:checked {
+  background: #f8ed1a -webkit-gradient(linear, left bottom, left top, from(#f8ed1a), to(#f8ed1a));
+  background: #f8ed1a linear-gradient(0deg, #f8ed1a 0%, #f8ed1a 100%);
+}
+
 label {
   color: white;
   text-align: center;
   font-size: 40pt;
   font-family: sans-serif;
+}
+
+.DailyChallenges {
+  vertical-align: middle;
+}
+
+.checkboxCell {
+  width: 90px;
+  height: 90px;
+}
+
+.challengeList {
+  border: 1px solid rgba(248, 237, 26, 0.5);
+}
+
+.challengeList:hover {
+  background-color: #f8ed1a;
+}
+
+.challengeList:hover select {
+  -webkit-filter: none;
+          filter: none;
+  color: #141419;
+  cursor: pointer;
+}
+
+.Challenges {
+  background-color: transparent;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  text-indent: 10px;
+  outline: 0;
+  border: none;
+  width: 100%;
+  height: 90px;
+  vertical-align: top;
+  font-size: 18pt;
+}
+
+.unitList {
+  width: 90px;
+  height: 90px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 .dropbtn {
@@ -58,11 +144,6 @@ label {
 
 .dropbtn:hover {
   background-color: #f8ed1a;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -86,61 +167,14 @@ label {
   background-color: #f8ed1a;
 }
 
-td {
-  max-height: 90px;
-}
-
-.blankImage {
-  background-color: #141419;
-}
-
-img {
-  width: 90px;
-  height: 90px;
-}
-
-.DailyChallenges {
-  vertical-align: middle;
-}
-
-.checkboxCell {
-  width: 90px;
-  height: 90px;
-}
-
-select {
-  background-color: transparent;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  text-indent: 10px;
-  outline: 0;
-  border: none;
-  width: 100%;
-  height: 90px;
-  vertical-align: top;
-  font-size: 18pt;
-}
-
-.challengeList:hover {
-  background-color: #f8ed1a;
-}
-
-.challengeList:hover select {
-  -webkit-filter: none;
-          filter: none;
-  color: #141419;
-  cursor: pointer;
-}
-
-.unitList {
-  width: 90px;
-  height: 90px;
-}
-
 .selectImage {
   width: 90px;
   height: 90px;
   border: 1px solid white;
+  background-color: #141419;
+}
+
+.blankImage {
   background-color: #141419;
 }
 
@@ -156,21 +190,4 @@ footer {
   position: absolute;
   bottom: 0;
   color: white;
-}
-
-#challengeTabs {
-  margin: 0;
-  border: none;
-  background-color: #eee;
-  width: 100vw;
-  white-space: normal;
-  height: 200px;
-}
-
-#challengeTabs option {
-  height: 100px;
-  width: 25%;
-  border: 1px solid #000;
-  background-color: white;
-  display: inline-block;
 }
