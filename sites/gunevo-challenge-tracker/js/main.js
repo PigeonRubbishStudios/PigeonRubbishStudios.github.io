@@ -25,16 +25,6 @@ else
     var savedChallengesDict = {};
 }
 
-// if (localStorage.getItem("checkboxDict") != null)
-// {
-//     var savedCheckboxDict = JSON.parse(localStorage.getItem("checkboxDict"));
-// }
-// else
-// {
-//     var savedCheckboxDict = {};
-// }
-
-
 const firstDaily = document.querySelector('#FirstDaily');
 const secondDaily = document.querySelector('#SecondDaily');
 const thirdDaily = document.querySelector('#ThirdDaily');
@@ -129,7 +119,6 @@ async function closeOtherDropdowns()
 async function showUnits(i)
 {
     var unitListElement = document.getElementById(i);
-    // console.log(switchShow);
     switch (switchShow) {
         case 0:
             await closeOtherDropdowns();
@@ -183,28 +172,9 @@ function fadeElements(n, i)
     if (!document.getElementById(n).checked) 
     {
         document.getElementById(i).style.opacity = 1;
-        // savedCheckboxDict[n] = document.getElementById(n).checked;
-        // localStorage.setItem("checkboxDict", JSON.stringify(savedCheckboxDict));
     }
     else
     {
         document.getElementById(i).style.opacity = 0.25;
-        // savedCheckboxDict[n] = document.getElementById(n).checked;
-        // localStorage.setItem("checkboxDict", JSON.stringify(savedCheckboxDict));
     }
 }
-
-// fadeElements("FirstDailyCheckbox", 500);
-// fadeElements("FirstDailyCheckbox", 501);
-// fadeElements("FirstDailyCheckbox", 502);
-// fadeElements("FirstDailyCheckbox", 503);
-// fadeElements("FirstDailyCheckbox", 504);
-
-function checkValue()
-{
-    console.log(document.getElementById("FirstDailyCheckbox").checked);
-}
-
-
-
-// localStorage.clear();
