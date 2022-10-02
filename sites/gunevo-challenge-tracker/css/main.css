@@ -157,3 +157,20 @@ footer {
   bottom: 0;
   color: white;
 }
+
+#challengeTabs {
+  margin: 0;
+  border: none;
+  background-color: #eee;
+  width: 100vw;
+  white-space: normal;
+  height: 200px;
+}
+
+#challengeTabs option {
+  height: 100px;
+  width: 25%;
+  border: 1px solid #000;
+  background-color: white;
+  display: inline-block;
+}
