@@ -10,9 +10,8 @@
 }
 
 html, body {
-  position: relative;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: sans-serif;
 }
@@ -24,6 +23,12 @@ body {
 
 header {
   width: 100vw;
+}
+
+section {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 a {
@@ -46,6 +51,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: auto;
 }
 
 .flexDiv {
@@ -114,6 +120,7 @@ label {
 
 .challengesDiv {
   margin-top: 10px;
+  max-width: 900px;
 }
 
 .DailyChallenges {
@@ -150,7 +157,7 @@ label {
   width: 100%;
   height: 90px;
   vertical-align: top;
-  font-size: 18pt;
+  font-size: 1vw;
 }
 
 .unitList {
@@ -211,6 +218,7 @@ label {
 .extraSpace {
   width: 100vw;
   height: 200px;
+  margin-top: auto;
 }
 
 .clearButton {
