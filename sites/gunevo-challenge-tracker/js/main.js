@@ -25,6 +25,15 @@ else
     var savedChallengesDict = {};
 }
 
+// if (localStorage.getItem("checkboxDict") != null)
+// {
+//     var savedCheckboxDict = JSON.parse(localStorage.getItem("checkboxDict"));
+// }
+// else
+// {
+//     var savedCheckboxDict = {};
+// }
+
 
 const firstDaily = document.querySelector('#FirstDaily');
 const secondDaily = document.querySelector('#SecondDaily');
@@ -66,6 +75,8 @@ function loadSaved()
     document.getElementById('FirstDaily').value = savedChallengesDict["FirstDaily"];
     document.getElementById('SecondDaily').value = savedChallengesDict["SecondDaily"];
     document.getElementById('ThirdDaily').value = savedChallengesDict["ThirdDaily"];
+
+    document.getElementById('FirstDailyCheckbox').checked = savedCheckboxDict['FirstDailyCheckbox'];
 }
 
 async function setCell(i)
@@ -93,7 +104,7 @@ async function swapImage(unitName)
     else
     {
         var unitURL = document.getElementById(unitName).getAttribute('src');
-        backgroundOption = `url('../${unitURL}')`;
+        backgroundOption = `url('${unitURL}')`;
         cellToSet.style.backgroundImage = backgroundOption;
         bgopt = cellToSet.getAttribute('id')
 
@@ -172,13 +183,22 @@ function fadeElements(n, i)
     if (!document.getElementById(n).checked) 
     {
         document.getElementById(i).style.opacity = 1;
-        
+        // savedCheckboxDict[n] = document.getElementById(n).checked;
+        // localStorage.setItem("checkboxDict", JSON.stringify(savedCheckboxDict));
     }
     else
     {
         document.getElementById(i).style.opacity = 0.25;
+        // savedCheckboxDict[n] = document.getElementById(n).checked;
+        // localStorage.setItem("checkboxDict", JSON.stringify(savedCheckboxDict));
     }
 }
+
+// fadeElements("FirstDailyCheckbox", 500);
+// fadeElements("FirstDailyCheckbox", 501);
+// fadeElements("FirstDailyCheckbox", 502);
+// fadeElements("FirstDailyCheckbox", 503);
+// fadeElements("FirstDailyCheckbox", 504);
 
 function checkValue()
 {
