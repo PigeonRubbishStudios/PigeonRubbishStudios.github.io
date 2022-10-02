@@ -3,7 +3,10 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
+}
+
+.challengeList {
+  border: 1px solid rgba(248, 237, 26, 0.5);
 }
 
 ::-webkit-scrollbar {
@@ -50,6 +53,10 @@ label {
   height: 90px;
   cursor: pointer;
   background-size: cover;
+}
+
+.dropbtn:hover {
+  background-color: #f8ed1a;
 }
 
 .dropdown {
@@ -102,7 +109,11 @@ img {
 
 select {
   background-color: transparent;
-  border: 1px solid rgba(248, 237, 26, 0.5);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  text-indent: 10px;
+  outline: 0;
+  border: none;
   width: 100%;
   height: 90px;
   vertical-align: top;
