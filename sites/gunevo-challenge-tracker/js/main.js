@@ -95,6 +95,7 @@ async function swapImage(unitName)
     {
         var unitURL = document.getElementById(unitName).getAttribute('src');
         backgroundOption = `url('../sites/gunevo-challenge-tracker/${unitURL}')`;
+        // backgroundOption = `url('../${unitURL}')`;
         cellToSet.style.backgroundImage = backgroundOption;
         bgopt = cellToSet.getAttribute('id')
 

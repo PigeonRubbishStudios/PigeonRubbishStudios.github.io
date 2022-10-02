@@ -55,6 +55,7 @@ ul
 
 label
 {
+  color:  white;
   text-align: center;
   font-size: 40pt;
   font-family: sans-serif;
@@ -140,6 +141,18 @@ select
   height: 90px;
   vertical-align: top;
   font-size: 18pt;
+}
+
+.challengeList:hover
+{
+  background-color: $gunEvoYellow;
+
+  select
+  {
+    filter: none;
+    color: $gunEvoGrey;
+    cursor: pointer;
+  }
 }
 
 .unitList
