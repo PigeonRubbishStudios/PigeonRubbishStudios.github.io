@@ -1,0 +1,129 @@
+/* Variables */
+/* All Pages */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  background-color: #141419;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.content-width {
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+label {
+  text-align: center;
+  font-size: 40pt;
+  font-family: sans-serif;
+}
+
+.dropbtn {
+  background-color: #141419;
+  border: 1px solid #f8ed1a;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  max-height: 300px;
+  width: 90px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: scroll;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8ed1a;
+}
+
+td {
+  max-height: 90px;
+}
+
+.blankImage {
+  background-color: #141419;
+}
+
+img {
+  width: 90px;
+  height: 90px;
+}
+
+.DailyChallenges {
+  vertical-align: middle;
+}
+
+.checkboxCell {
+  width: 90px;
+  height: 90px;
+}
+
+select {
+  background-color: transparent;
+  border: 1px solid rgba(248, 237, 26, 0.5);
+  width: 100%;
+  height: 90px;
+  vertical-align: top;
+  font-size: 18pt;
+}
+
+.unitList {
+  width: 90px;
+  height: 90px;
+}
+
+.selectImage {
+  width: 90px;
+  height: 90px;
+}
+
+.clearButton {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #141419;
+  background-color: #f8ed1a;
+  width: 100px;
+  height: 50px;
+}
