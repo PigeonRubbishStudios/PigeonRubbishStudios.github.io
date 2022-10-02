@@ -65,8 +65,6 @@ function loadSaved()
     document.getElementById('FirstDaily').value = savedChallengesDict["FirstDaily"];
     document.getElementById('SecondDaily').value = savedChallengesDict["SecondDaily"];
     document.getElementById('ThirdDaily').value = savedChallengesDict["ThirdDaily"];
-
-    document.getElementById('FirstDailyCheckbox').checked = savedCheckboxDict['FirstDailyCheckbox'];
 }
 
 async function setCell(i)
@@ -161,12 +159,6 @@ function clearSaves()
     document.getElementById('ThirdDaily').value = -1;
     console.log("Data Cleared");
 }
-
-function logSelectValue()
-{
-    console.log(document.getElementById("FirstDaily").value)
-}
-
 
 function fadeElements(n, i)
 {
