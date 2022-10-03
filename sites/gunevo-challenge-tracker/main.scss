@@ -1,6 +1,7 @@
 /* Variables */
 $gunEvoGrey: #141419;
 $gunEvoGreyLight: #22222b;
+$disclaimerText: #515169;
 $gunEvoYellow: #f8ed1a;
 
 
@@ -251,9 +252,22 @@ label
 
 .extraSpace
 {
+  position: relative;
   width: 100vw;
   height: 200px;
   margin-top: auto;
+  padding: 10px;
+}
+
+.disclaimer
+{
+  color: $disclaimerText;
+  // position: absolute;
+  // bottom: 0;
+  // max-width: 200px;
+  margin: 0;
+  padding: 0 200px 0 20px;
+  font-size: 1.25vw;
 }
 
 .clearButton
@@ -267,6 +281,7 @@ label
 
 footer
 {
+  position: relative;
   width: 100vw;
   color: white;
 }
@@ -275,4 +290,5 @@ footer
 {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }

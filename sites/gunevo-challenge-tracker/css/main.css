@@ -216,9 +216,18 @@ label {
 }
 
 .extraSpace {
+  position: relative;
   width: 100vw;
   height: 200px;
   margin-top: auto;
+  padding: 10px;
+}
+
+.disclaimer {
+  color: #515169;
+  margin: 0;
+  padding: 0 200px 0 20px;
+  font-size: 1.25vw;
 }
 
 .clearButton {
@@ -229,6 +238,7 @@ label {
 }
 
 footer {
+  position: relative;
   width: 100vw;
   color: white;
 }
@@ -240,4 +250,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
