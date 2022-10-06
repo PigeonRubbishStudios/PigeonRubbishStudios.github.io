@@ -195,34 +195,43 @@ async function showUnits(i)
     }
 }
 
-function clearSaves()
+function clearSaves(i, n, x)
 {
-    for (let i = 0; i < Object.keys(savedUnitsDict).length; i++) 
+    // for (let i = 0; i < Object.keys(savedUnitsDict).length; i++) 
+    // {
+    //     var cellToSet = document.getElementById(Object.keys(savedUnitsDict)[i]);
+    //     backgroundOption = "none";
+    //     cellToSet.style.backgroundImage = backgroundOption;  
+    // } 
+    // localStorage.clear();
+
+    var cellToSet = document.getElementById(i);
+    backgroundOption = "none";
+    cellToSet.style.backgroundImage = backgroundOption; 
+
+    delete savedUnitsDict[i];
+    localStorage.setItem("unitsDict", JSON.stringify(savedUnitsDict));
+
+    if (x == 'daily') 
     {
-        var cellToSet = document.getElementById(Object.keys(savedUnitsDict)[i]);
-        backgroundOption = "none";
-        cellToSet.style.backgroundImage = backgroundOption;  
-    } 
-    localStorage.clear();
-    for (const key in savedUnitsDict) 
-    {
-    delete savedUnitsDict[key];
+        document.getElementById('FirstDaily').value = -1;
+        document.getElementById('SecondDaily').value = -1;
+        document.getElementById('ThirdDaily').value = -1;
+        savedChallengesDict["FirstDaily"] = -1;
+        savedChallengesDict["SecondDaily"] = -1;
+        savedChallengesDict["ThirdDaily"] = -1;
+        localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
     }
-    for (const key in savedChallengesDict) 
+    else if (x == 'weekly') 
     {
-    delete savedChallengesDict[key];
+        document.getElementById('FirstWeekly').value = -1;
+        document.getElementById('SecondWeekly').value = -1;
+        document.getElementById('ThirdWeekly').value = -1;
+        document.getElementById('FourthWeekly').value = -1;
+        document.getElementById('FifthWeekly').value = -1;
+        document.getElementById('SixthWeekly').value = -1;
     }
 
-    document.getElementById('FirstDaily').value = -1;
-    document.getElementById('SecondDaily').value = -1;
-    document.getElementById('ThirdDaily').value = -1;
-
-    document.getElementById('FirstWeekly').value = -1;
-    document.getElementById('SecondWeekly').value = -1;
-    document.getElementById('ThirdWeekly').value = -1;
-    document.getElementById('FourthWeekly').value = -1;
-    document.getElementById('FifthWeekly').value = -1;
-    document.getElementById('SixthWeekly').value = -1;
     console.log("Data Cleared");
 }
 
