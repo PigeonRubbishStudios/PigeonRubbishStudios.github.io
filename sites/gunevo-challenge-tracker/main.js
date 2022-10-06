@@ -195,7 +195,7 @@ async function showUnits(i)
     }
 }
 
-function clearSaves(i, n, x)
+function clearSaves(i, x)
 {
     // for (let i = 0; i < Object.keys(savedUnitsDict).length; i++) 
     // {
@@ -230,6 +230,13 @@ function clearSaves(i, n, x)
         document.getElementById('FourthWeekly').value = -1;
         document.getElementById('FifthWeekly').value = -1;
         document.getElementById('SixthWeekly').value = -1;
+        savedChallengesDict["FirstWeekly"] = -1;
+        savedChallengesDict["SecondWeekly"] = -1;
+        savedChallengesDict["ThirdWeekly"] = -1;
+        savedChallengesDict["FourthWeekly"] = -1;
+        savedChallengesDict["FifthWeekly"] = -1;
+        savedChallengesDict["SixthWeekly"] = -1;
+        localStorage.setItem("challengesDict", JSON.stringify(savedChallengesDict));
     }
 
     console.log("Data Cleared");

@@ -127,11 +127,6 @@ img
   display: none;
 }
 
-// #weeklyChallengesDiv
-// {
-//   margin-bottom: 100px;
-// }
-
 label
 {
   color:  white;
@@ -262,9 +257,6 @@ label
 .disclaimer
 {
   color: $disclaimerText;
-  // position: absolute;
-  // bottom: 0;
-  // max-width: 200px;
   margin: 0;
   padding: 0 200px 0 20px;
   font-size: 1.25vw;
@@ -272,9 +264,10 @@ label
 
 .clearButton
 {
-  // margin-top: 20px;
+  margin-top: 10px;
   color: $gunEvoGrey;
-  background-color: $gunEvoYellow;
+  background-color: $gunEvoGreyLight;
+  border: none;
   width: 100px;
   height: 50px;
 }
@@ -282,18 +275,30 @@ label
 .clearButton:hover
 {
   cursor: pointer;
+  background-color: $gunEvoYellow;
 }
 
 footer
 {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100vw;
   color: white;
 }
 
-.footerFlex
+// .footerFlex
+// {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-start;
+// }
+
+
+@media screen and (max-width: 1850px) 
 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  footer
+  {
+    position: initial;
+  }
+  
 }

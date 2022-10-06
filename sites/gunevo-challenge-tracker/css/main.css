@@ -1,8 +1,7 @@
 /* Variables */
 /* All Pages */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -55,17 +54,10 @@ img {
 }
 
 .flexDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #challengeTabs {
@@ -76,11 +68,10 @@ img {
   height: 69.5px;
   outline: none;
 }
-
 #challengeTabs option {
   width: 50%;
   padding: 7px;
-  color: #1414197d;
+  color: rgba(20, 20, 25, 0.4901960784);
   border: 1px solid #000;
   font-size: 2.9167rem;
   text-align: center;
@@ -89,21 +80,16 @@ img {
   display: inline-block;
   margin: 0;
 }
-
 #challengeTabs option:hover {
   background-color: #f8ed1a;
   color: #141419;
   cursor: pointer;
 }
-
 #challengeTabs option:checked {
   color: #141419;
-  background: #f8ed1a -webkit-gradient(linear, left bottom, left top, from(#f8ed1a), to(#f8ed1a));
   background: #f8ed1a linear-gradient(0deg, #f8ed1a 0%, #f8ed1a 100%);
 }
-
 #challengeTabs [multiple]:focus option:checked {
-  background: #f8ed1a -webkit-gradient(linear, left bottom, left top, from(#f8ed1a), to(#f8ed1a));
   background: #f8ed1a linear-gradient(0deg, #f8ed1a 0%, #f8ed1a 100%);
 }
 
@@ -139,18 +125,15 @@ label {
 .challengeList:hover {
   background-color: #f8ed1a;
 }
-
 .challengeList:hover select {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
   color: #141419;
   cursor: pointer;
 }
 
 .Challenges {
   background-color: transparent;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
   text-indent: 10px;
   outline: 0;
   border: none;
@@ -188,18 +171,15 @@ label {
   position: absolute;
   max-height: 300px;
   width: 90px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.87);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.87);
   z-index: 1;
   overflow: scroll;
 }
-
 .dropdown-content a {
   color: black;
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {
   background-color: #f8ed1a;
 }
@@ -231,30 +211,28 @@ label {
 }
 
 .clearButton {
+  margin-top: 10px;
   color: #141419;
-  background-color: #f8ed1a;
+  background-color: #22222b;
+  border: none;
   width: 100px;
   height: 50px;
 }
 
 .clearButton:hover {
   cursor: pointer;
+  background-color: #f8ed1a;
 }
 
 footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 100vw;
   color: white;
 }
 
-.footerFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+@media screen and (max-width: 1850px) {
+  footer {
+    position: initial;
+  }
 }
