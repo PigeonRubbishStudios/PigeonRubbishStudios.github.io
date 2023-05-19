@@ -46,17 +46,6 @@ ul {
   margin-bottom: 5rem;
 }
 
-.section-headings {
-  font-weight: 900;
-  font-style: normal;
-  text-align: center;
-  color: #40593b;
-  font-size: 50px;
-  margin: 0.83em auto 0 auto;
-  max-width: 1150px;
-  width: 100%;
-}
-
 /* Nav Bar */
 header {
   width: 100vw;
@@ -97,7 +86,9 @@ header .topnav input::placeholder {
 }
 
 section {
+  height: 100vh;
   margin: 5% 0 0 0;
+  padding-bottom: 50px;
 }
 
 section .card-item {
@@ -111,6 +102,8 @@ section .card-item {
 section .card-link {
   width: 100%;
   position: relative;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 section .card {
@@ -123,6 +116,11 @@ section .card {
   border-radius: 5%;
   -webkit-filter: blur(3px);
           filter: blur(3px);
+  box-shadow: -5px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -5px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 section p {
@@ -136,6 +134,22 @@ section p {
   margin: 0;
   z-index: 100;
   font-size: 25pt;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+section .card-link:hover .card {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+section .card-link:hover p {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+footer {
+  height: 50px;
 }
 
 @media screen and (max-width: 990px) {

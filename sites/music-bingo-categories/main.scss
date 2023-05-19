@@ -41,9 +41,7 @@ ul
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  // max-width: 750px;
   justify-content: space-around;
-  // align-content: space-between;
   height: 100vh;
   
 }
@@ -55,18 +53,6 @@ ul
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
-}
-
-.section-headings
-{
-  font-weight: 900;
-  font-style: normal;
-  text-align: center;
-  color: $tctGreen;
-  font-size: 50px;
-  margin: 0.83em auto 0 auto;
-  max-width: 1150px;
-  width: 100%;
 }
 
 
@@ -104,7 +90,9 @@ header
 
 section
 {
+  height: 100vh;
   margin: 5% 0 0 0;
+  padding-bottom: 50px;
   .card-item
   {
     margin: 20px 0 0 0;
@@ -112,15 +100,13 @@ section
     width: 100%;
     max-height: 300px;
     height: 100%;
-    // max-height: 300px;
-    // height: 100%;
-    // width: fit-content;
   }
 
   .card-link
   {
     width: 100%;
     position: relative;
+    transition: all .2s ease-in-out; 
   }
 
   .card
@@ -133,6 +119,10 @@ section
     height: 100%;
     border-radius: 5%;
     filter: blur(3px);
+    box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 10px 0px 0px rgba(0,0,0,0.75);
+    transition: all .2s ease-in-out; 
   }
 
   p
@@ -147,7 +137,25 @@ section
     margin: 0;
     z-index: 100;
     font-size: 25pt;
+    transition: all .2s ease-in-out;
   }
+
+  
+    .card-link:hover .card
+    {
+      transform: scale(1.03);
+    }
+    .card-link:hover p
+    {
+      transform: scale(1.03);
+    }
+}
+
+footer
+{
+
+  
+  height: 50px;
 }
 
 @media screen and (max-width: 990px)
