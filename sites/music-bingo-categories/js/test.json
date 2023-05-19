@@ -1,0 +1,50 @@
+{
+    "70sVol1": {
+        "category_name": "I Love the 70s Vol. 1",
+        "category_link": "https://google.com"
+    },
+    "70sVol2": {
+        "category_name": "I Love the 70s Vol. 1",
+        "category_link": "https://google.com"
+    },
+    "80sVol1": {
+        "category_name": "I Love the 80s Vol. 1",
+        "category_link": "https://google.com"
+    },
+    "80sVol2": {
+        "category_name": "I Love the 80s Vol. 2",
+        "category_link": "https://google.com"
+    },
+    "2000sVol1": {
+        "category_name": "I Love the 2000s Vol. 1",
+        "category_link": "https://google.com"
+    },
+    "2000sVol2": {
+        "category_name": "I Love the 2000s Vol. 2",
+        "category_link": "https://google.com"
+    },
+    "2010sVol1": {
+        "category_name": "I Love the 2010s Vol. 1",
+        "category_link": "https://google.com"
+    },
+    "2010sVol2": {
+        "category_name": "I Love the 2010s Vol. 2",
+        "category_link": "https://google.com"
+    },
+    "broadway": {
+        "category_name": "Broadway",
+        "category_link": "https://google.com"
+    },
+    "classic_rockVol1": {
+        "category_name": "Classic Rock Vol. 1",
+        "category_link": "https://google.com"
+    },
+    "classic_rockVol2": {
+        "category_name": "Classic Rock Vol. 2",
+        "category_link": "https://google.com"
+    },
+    "emotionally_unstable": {
+        "category_name": "EMOtionally Unstable",
+        "category_link": "https://google.com"
+    }
+}

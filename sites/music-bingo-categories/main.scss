@@ -1,0 +1,185 @@
+/* Variables */
+$tctYellow: #feb933;
+$tctGreen: #40593b;
+$engraveGrey: #808080;
+
+
+
+/* All Pages */
+*
+{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar
+{
+  display: none;
+}
+
+html, body
+{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+body
+{
+  background-color: $tctYellow;
+  font-family: nunito-sans,sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+ul
+{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  // max-width: 750px;
+  justify-content: space-around;
+  // align-content: space-between;
+  height: 100vh;
+  
+}
+
+.content-width
+{
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.section-headings
+{
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  color: $tctGreen;
+  font-size: 50px;
+  margin: 0.83em auto 0 auto;
+  max-width: 1150px;
+  width: 100%;
+}
+
+
+
+/* Nav Bar */
+header
+{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+
+  .topnav 
+  {
+    overflow: hidden;
+    background-color: $tctGreen;
+
+    input[type=text] 
+    {
+      background-color: $tctGreen;
+      color: $tctYellow;
+      padding: 6px;
+      font-size: 17px;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+    }
+
+    input::placeholder
+    {
+      color: #a8843b;
+    }
+  }
+}
+
+section
+{
+  margin: 5% 0 0 0;
+  .card-item
+  {
+    margin: 20px 0 0 0;
+    max-width: 500px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    // max-height: 300px;
+    // height: 100%;
+    // width: fit-content;
+  }
+
+  .card-link
+  {
+    width: 100%;
+    position: relative;
+  }
+
+  .card
+  {
+    position: relative;
+    background-image: url('../images/empty_card.jpg');
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    filter: blur(3px);
+  }
+
+  p
+  {
+    position: absolute;
+    font-weight: 900;
+    color: black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30% 0 25% 0;
+    margin: 0;
+    z-index: 100;
+    font-size: 25pt;
+  }
+}
+
+@media screen and (max-width: 990px)
+{
+  ul
+  {
+    display: block;
+    height: 100vh;
+  }
+
+  header
+  {
+
+    .topnav 
+    {
+
+      input[type=text] 
+      {
+        width: 100%;
+        height: 100px;
+        font-size: 25pt;
+      }
+    }
+  }
+
+  section
+  {
+    margin-top: 20%;
+    .card-item
+    {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
