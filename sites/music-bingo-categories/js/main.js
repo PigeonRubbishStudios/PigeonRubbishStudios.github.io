@@ -17,11 +17,12 @@ for (let i = 0; i < Object.keys(json).length; i++)
     a.target = "_blank";
     var div = document.createElement('div');
     div.className = "card";
-    var p = document.createElement('p');
-    p.className = "category-name";
-    p.innerHTML = Object.values(values)[0];
+    div.innerHTML = Object.values(values)[0];
+    // var p = document.createElement('p');
+    // p.className = "category-name";
+    // p.innerHTML = Object.values(values)[0];
 
-    a.appendChild(p);
+    // a.appendChild(p);
     a.appendChild(div);
     li.appendChild(a);
     ul.appendChild(li);  
