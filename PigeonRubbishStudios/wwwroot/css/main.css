@@ -1,3 +1,10 @@
-﻿
+﻿* {
+  box-sizing: border-box !important;
+  font-family: "Nunito Sans", sans-serif;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%5D,%22names%22:%5B%5D,%22mappings%22:%22%22%7D */
+html {
+  background-color: #c6c29d;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/PigeonRubbishStudios/wwwroot/css/main.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACA;EACA;;;AAGD;EACC%22%7D */
