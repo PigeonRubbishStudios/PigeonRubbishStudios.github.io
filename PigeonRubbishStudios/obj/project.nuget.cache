@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m8UdUBfH2pI=",
+  "dgSpecHash": "FeQyB0n+icw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kbolinger\\Documents\\Repos\\PigeonRubbishStudios\\PigeonRubbishStudios.csproj",
+  "projectFilePath": "C:\\Users\\kbolinger\\Documents\\Repos\\PigeonRubbishStudios\\PigeonRubbishStudios\\PigeonRubbishStudios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kbolinger\\.nuget\\packages\\blazor.bootstrap\\3.5.0\\blazor.bootstrap.3.5.0.nupkg.sha512",
     "C:\\Users\\kbolinger\\.nuget\\packages\\blazoranimation\\2.2.0\\blazoranimation.2.2.0.nupkg.sha512",
