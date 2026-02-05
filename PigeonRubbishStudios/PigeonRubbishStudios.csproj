@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="compilerconfig.json" />
     <Content Remove="Data/SQL.txt" />
-    <Content Remove="wwwroot\js\main.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,14 +45,9 @@
   <ItemGroup>
     <None Include="compilerconfig.json" />
     <None Include="wwwroot\js\main.js" />
-    <None Include="Resources\AppIconRounded.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="wwwroot\images\icon\" />
   </ItemGroup>
 
