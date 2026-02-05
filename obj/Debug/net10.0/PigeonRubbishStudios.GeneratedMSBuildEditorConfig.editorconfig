@@ -5,6 +5,9 @@ build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.VerifyReferenceTrimCompatibility = 
 build_property.VerifyReferenceAotCompatibility = 
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net10.0
 build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
@@ -17,45 +20,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = PigeonRubbishStudios
 build_property.RootNamespace = PigeonRubbishStudios
-build_property.ProjectDir = C:\Users\kbolinger\Desktop\PigeonRubbishStudios\
+build_property.ProjectDir = C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kbolinger\Desktop\PigeonRubbishStudios
+build_property.MSBuildProjectDirectory = C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/App.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/Pages/Counter.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/Pages/Home.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/Pages/NotFound.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/Pages/Weather.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/_Imports.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/Layout/MainLayout.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0eifj3hrf6
 
-[C:/Users/kbolinger/Desktop/PigeonRubbishStudios/Layout/NavMenu.razor]
+[C:/Users/kbolinger/Documents/Repos/PigeonRubbishStudios/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hiybuxr5ag

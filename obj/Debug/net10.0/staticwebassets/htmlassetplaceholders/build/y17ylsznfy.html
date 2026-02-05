@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PigeonRubbishStudios</title>
+    <base href="/" />
+    <link href="_framework/dotnet.qbylrzbh1j.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-Bvg8nXKwGoACQFC8Gap56Y+NuG4VLrJtTgewoUBdFHU=" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="PigeonRubbishStudios.styles.css" rel="stylesheet" />
+    <script type="importmap">{
+  "imports": {
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.js": "./_content/Blazor.Bootstrap/blazor.bootstrap.5c2gp224fj.js",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.pdf.js": "./_content/Blazor.Bootstrap/blazor.bootstrap.pdf.n1mvvrfiip.js",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.sortable-list.js": "./_content/Blazor.Bootstrap/blazor.bootstrap.sortable-list.ezlxc6gzv3.js",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.theme-switcher.js": "./_content/Blazor.Bootstrap/blazor.bootstrap.theme-switcher.pisakkcwob.js",
+    "./_content/Blazor.Bootstrap/pdfjs-4.0.379.min.js": "./_content/Blazor.Bootstrap/pdfjs-4.0.379.min.j8zp7bt7w3.js",
+    "./_content/Blazor.Bootstrap/pdfjs-4.0.379.worker.min.js": "./_content/Blazor.Bootstrap/pdfjs-4.0.379.worker.min.79hai7knhw.js",
+    "./_content/Microsoft.DotNet.HotReload.WebAssembly.Browser/Microsoft.DotNet.HotReload.WebAssembly.Browser.lib.module.js": "./_content/Microsoft.DotNet.HotReload.WebAssembly.Browser/Microsoft.DotNet.HotReload.WebAssembly.Browser.99zm1jdh75.lib.module.js",
+    "./_content/MudBlazor/MudBlazor.min.js": "./_content/MudBlazor/MudBlazor.min.dvedvienpo.js",
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.66stpp682q.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.87vtjjdetb.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.qbylrzbh1j.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.2tx45g8lli.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.js": "./lib/bootstrap/dist/js/bootstrap.bundle.8owtemobuu.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.min.js": "./lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
+    "./lib/bootstrap/dist/js/bootstrap.js": "./lib/bootstrap/dist/js/bootstrap.el9trkliob.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.min.js": "./lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.js": "./lib/bootstrap/dist/js/bootstrap.esm.zvy6zml3tl.js",
+    "./lib/bootstrap/dist/js/bootstrap.min.js": "./lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.5c2gp224fj.js": "sha256-K2/8DlTnqlDEoF5c6HURzb3R0IK1KrywUAEbLLWNCno=",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.js": "sha256-K2/8DlTnqlDEoF5c6HURzb3R0IK1KrywUAEbLLWNCno=",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.pdf.js": "sha256-W7yoJQDLn/kp1Hj9hVIhrOf7Y5VHTzRZLnz9+3x6Ocs=",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.pdf.n1mvvrfiip.js": "sha256-W7yoJQDLn/kp1Hj9hVIhrOf7Y5VHTzRZLnz9+3x6Ocs=",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.sortable-list.ezlxc6gzv3.js": "sha256-du71NM6e2+m9l81ldV+Gbr74ER7Xx1GnJFg+rIY6OQU=",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.sortable-list.js": "sha256-du71NM6e2+m9l81ldV+Gbr74ER7Xx1GnJFg+rIY6OQU=",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.theme-switcher.js": "sha256-Hy2y6B5ohWPnmWg4c52+QUuZGTw8r09KtWKcaGiaa/k=",
+    "./_content/Blazor.Bootstrap/blazor.bootstrap.theme-switcher.pisakkcwob.js": "sha256-Hy2y6B5ohWPnmWg4c52+QUuZGTw8r09KtWKcaGiaa/k=",
+    "./_content/Blazor.Bootstrap/pdfjs-4.0.379.min.j8zp7bt7w3.js": "sha256-XX7we2CiSWzj3rsNtKFCod90LBYAJ3bo8rmu4EuN7SQ=",
+    "./_content/Blazor.Bootstrap/pdfjs-4.0.379.min.js": "sha256-XX7we2CiSWzj3rsNtKFCod90LBYAJ3bo8rmu4EuN7SQ=",
+    "./_content/Blazor.Bootstrap/pdfjs-4.0.379.worker.min.79hai7knhw.js": "sha256-JbwqIn9Fic7JuWyTXuNnAA1T0dYQ2tkTi9HhrSltUtQ=",
+    "./_content/Blazor.Bootstrap/pdfjs-4.0.379.worker.min.js": "sha256-JbwqIn9Fic7JuWyTXuNnAA1T0dYQ2tkTi9HhrSltUtQ=",
+    "./_content/BlazorAnimation/blazorAnimationInterop.js": "sha256-+t/o5a1+4WbQxhoZypQHhvyATOlNrCBf5wRvVZ3/lrU=",
+    "./_content/BlazorCore.JSInterop/colorTheme.js": "sha256-XXzhlUuo9DwO+pniWQXAgdqj3CtYYeagHsm5P1wVp08=",
+    "./_content/BlazorCore.JSInterop/geo.js": "sha256-M1NiPRVWWqV+UYtWX5qLoFmgUBTZT3cI31EpNe/aXQg=",
+    "./_content/GoogleAnalytics.Blazor/googleanalytics.blazor.js": "sha256-xN8iUHiwQ3gsDBrsXWg8LABaVZgoq9muSGkv2LPl4uw=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/click.js": "sha256-q9+XxiXjptATtZRtRHKZh2Csmug0oIIK+41kSIkwJok=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/click.min.js": "sha256-Sf4nu2sCy00l76oWnANp9dybHovLAKtO2ViKlhh+39I=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/clipboard.js": "sha256-Vqjfh0kKmYKR1ZdcLufgJXbDfQw6gVrFU1EyKK9IspU=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/clipboard.min.js": "sha256-mU/sb2KFE26cU6EsGdLKCPXHXUXwrcnhwtE/psiFFc4=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/colorTheme.js": "sha256-+Jua/EGfNCajkBsjmcCGld0ooGArToKfUUwV5KxkMpc=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/colorTheme.min.js": "sha256-eay6bnvDLRNReI3u2SkrvNXJ+ZHRpd/ZxgfbrCb2Pdk=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/elementInfo.js": "sha256-f89rPCvd1F+amdVEf1u6mBA+ZBHhsgVob8VZVfiFPXg=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/elementInfo.min.js": "sha256-V5D03QHu/6tAREYltm5GD6uWofWbkKpifnpFe30u8ZI=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/focus.js": "sha256-VdqVRDWBLPOI2NzrpnmWkBG+PQqWU9K2PghWHFggezM=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/focus.min.js": "sha256-DqdErbdk7PRlRZkNgPToZo6gKqtS17OI2h5FafqVhzE=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/geo.js": "sha256-3WARxg52QKi7KzUNbfBWqsabsJIvnjPefZtxLQJtQCU=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/geo.min.js": "sha256-QNw/60R6gpSZKuhWE/BUXezx5uqpoz5FNtaJlXSIm8I=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/globalMouseEvents.js": "sha256-M51wDinGdmDpshi/J5hrH2RjHgTOHpUo9FpLBVFDMV4=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/globalMouseEvents.min.js": "sha256-vWrODcJnzxnV3aKSXS0BM2xBqrwmVDw2vCyX/sQaWn4=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/head.js": "sha256-3TTC12nBKqJBT4qXsyAKvdi7nKdpxVOQDaCNWjum/9A=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/head.min.js": "sha256-cN8W1Fa697IvYvWxIdsww6DeAH+CbyVJEMwM15pYQYM=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/lang.js": "sha256-3e4tO4QdJDTs1tMeYdSTpyFNYuTSVQ/Upa6oGcWFud0=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/lang.min.js": "sha256-Qs2UJz0eUzHhL98R/VAeGzdgU0yB3vclokjqtt6NA1U=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/resize.js": "sha256-fQtREBtE+Zd+LtLucTd88HnysDeFCGBb9y8+4ZrEA1Q=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/resize.min.js": "sha256-YS7R5HfLfrfY79yYjHyW9m8Lxx20pwn9PUcemfXxd04=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/scroll.js": "sha256-YH+RleD25j+bgQQHiEDuQ6bdPA9xH6VOrPzy5Qaizt8=",
+    "./_content/Majorsoft.Blazor.Components.Common.JsInterop/scroll.min.js": "sha256-/+0Q2FfybPUVxBMZMHcObX4Wnl+jLvc6AqrtbsdKK3M=",
+    "./_content/Microsoft.DotNet.HotReload.WebAssembly.Browser/Microsoft.DotNet.HotReload.WebAssembly.Browser.99zm1jdh75.lib.module.js": "sha256-A8e6zZwhOqf7lDQqbbCYcAUv4wGE9aQxOo4WyYxR//0=",
+    "./_content/Microsoft.DotNet.HotReload.WebAssembly.Browser/Microsoft.DotNet.HotReload.WebAssembly.Browser.lib.module.js": "sha256-A8e6zZwhOqf7lDQqbbCYcAUv4wGE9aQxOo4WyYxR//0=",
+    "./_content/MudBlazor/MudBlazor.min.dvedvienpo.js": "sha256-d8yY6ZTx9cLh9DgDmlhmfAinmcOTwUbP4c2SXLOFwuk=",
+    "./_content/MudBlazor/MudBlazor.min.js": "sha256-d8yY6ZTx9cLh9DgDmlhmfAinmcOTwUbP4c2SXLOFwuk=",
+    "./_framework/blazor.webassembly.66stpp682q.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
+    "./_framework/blazor.webassembly.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
+    "./_framework/dotnet.js": "sha256-Bvg8nXKwGoACQFC8Gap56Y+NuG4VLrJtTgewoUBdFHU=",
+    "./_framework/dotnet.native.87vtjjdetb.js": "sha256-zE11fbcG2CeLl1Zi+NJgMOfWpdjuUWNte+icrtAO58I=",
+    "./_framework/dotnet.native.js": "sha256-zE11fbcG2CeLl1Zi+NJgMOfWpdjuUWNte+icrtAO58I=",
+    "./_framework/dotnet.qbylrzbh1j.js": "sha256-Bvg8nXKwGoACQFC8Gap56Y+NuG4VLrJtTgewoUBdFHU=",
+    "./_framework/dotnet.runtime.2tx45g8lli.js": "sha256-2lZh9yO0fnzm3Xt7yV+Kox3DH3nK7L8hDhm84VT1xco=",
+    "./_framework/dotnet.runtime.js": "sha256-2lZh9yO0fnzm3Xt7yV+Kox3DH3nK7L8hDhm84VT1xco=",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.8owtemobuu.js": "sha256-WI/9URoMIuGpYsfaA5X9YntjPL81w/Fo917H2+bLGkY=",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.js": "sha256-WI/9URoMIuGpYsfaA5X9YntjPL81w/Fo917H2+bLGkY=",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js": "sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.min.js": "sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=",
+    "./lib/bootstrap/dist/js/bootstrap.el9trkliob.js": "sha256-Lo8x8i1VWJGSrUqrKdkH7fNi9fpYldqqDk2S3Hnqg+k=",
+    "./lib/bootstrap/dist/js/bootstrap.esm.js": "sha256-HyGo1Vp6ECkLZ1KJo+H/sl9J4d0g5XmJiAU9tTkNm2s=",
+    "./lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js": "sha256-QZdFT1ZNdly4rmgUBtXmXFS9BU1FTa+sPe6h794sFRQ=",
+    "./lib/bootstrap/dist/js/bootstrap.esm.min.js": "sha256-QZdFT1ZNdly4rmgUBtXmXFS9BU1FTa+sPe6h794sFRQ=",
+    "./lib/bootstrap/dist/js/bootstrap.esm.zvy6zml3tl.js": "sha256-HyGo1Vp6ECkLZ1KJo+H/sl9J4d0g5XmJiAU9tTkNm2s=",
+    "./lib/bootstrap/dist/js/bootstrap.js": "sha256-Lo8x8i1VWJGSrUqrKdkH7fNi9fpYldqqDk2S3Hnqg+k=",
+    "./lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js": "sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=",
+    "./lib/bootstrap/dist/js/bootstrap.min.js": "sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ="
+  }
+}</script>
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="." class="reload">Reload</a>
+        <span class="dismiss">🗙</span>
+    </div>
+    <script src="_framework/blazor.webassembly.66stpp682q.js"></script>
+</body>
+
+</html>
