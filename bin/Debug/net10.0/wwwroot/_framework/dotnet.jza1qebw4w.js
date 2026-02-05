@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "PigeonRubbishStudios",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-i/+RlQxPopALohHLblCqUoXEMgfXCscSCnBhu6KyeIs=",
+    "hash": "sha256-kYWZ9X7p8J3KwTskBAPWelOA9pUjmG7mNRzrM/foSdI=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.87vtjjdetb.js"
@@ -1572,16 +1572,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "PigeonRubbishStudios.wasm",
-        "name": "PigeonRubbishStudios.1ko30toig2.wasm",
-        "integrity": "sha256-78wGDZuPrNzwa8M463zhei/IhCOC3NqTuXO7XGXHNpQ=",
+        "name": "PigeonRubbishStudios.8pp09gj8y3.wasm",
+        "integrity": "sha256-HJt/ff9JyKg10bv4+os/c1awmroZo7iipwWWDdFaSfQ=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "PigeonRubbishStudios.pdb",
-        "name": "PigeonRubbishStudios.ni5ga2g6d5.pdb",
-        "integrity": "sha256-75FYocB4plws4upj0BzvwhU7FCeMgtUZPxKuxpZ8gNM=",
+        "name": "PigeonRubbishStudios.u8dxnv36yf.pdb",
+        "integrity": "sha256-TsTfwbq5CtQTcEY4y3eOvpg+ZgoaTrg3PxLtOMK7hlY=",
         "cache": "force-cache"
       }
     ],

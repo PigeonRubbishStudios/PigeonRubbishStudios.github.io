@@ -288,9 +288,6 @@ C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroo
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.1ko30toig2.wasm
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.ni5ga2g6d5.pdb
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\dotnet.qbylrzbh1j.js
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\blazor.webassembly.66stpp682q.js.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\BlazorBootstrap.zo6lifkmy7.wasm.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\BlazorAnimation.qfj0d0mxnh.wasm.gz
@@ -580,9 +577,6 @@ C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroo
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.1ko30toig2.wasm.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.ni5ga2g6d5.pdb.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\dotnet.qbylrzbh1j.js.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\PigeonRubbishStudios.staticwebassets.runtime.json
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\PigeonRubbishStudios.staticwebassets.endpoints.json
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\PigeonRubbishStudios.dll
@@ -1260,7 +1254,6 @@ C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compre
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\1uw3a23wa6-{0}-k72fsduyas-k72fsduyas.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\zwqm07mb9k-{0}-63fj8s7r0e-63fj8s7r0e.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\0cod9uaokb-{0}-r37jpkscte-r37jpkscte.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\imrupwspu3-{0}-iag0ou56lh-iag0ou56lh.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\orwvwc78lv-{0}-66stpp682q-66stpp682q.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\qtgv539xxc-{0}-0kry7p7hr1-0kry7p7hr1.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\8kf3rcg0xy-{0}-olwso25aue-olwso25aue.gz
@@ -1554,10 +1547,6 @@ C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compre
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\dp1gefpfr4-{0}-tjcz0u77k5-tjcz0u77k5.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\gbzizaf6sn-{0}-tptq2av103-tptq2av103.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\a5khyut3dz-{0}-lfu7j35m59-lfu7j35m59.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\qhj0u4nmty-{0}-1ko30toig2-1ko30toig2.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\m8gy3bdcin-{0}-ni5ga2g6d5-ni5ga2g6d5.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\3xtx6nd39w-{0}-qbylrzbh1j-qbylrzbh1j.gz
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\oip7y8dsqe-{0}-1c53memdi1-1c53memdi1.gz
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\staticwebassets.development.json
@@ -1569,3 +1558,16 @@ C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\Pigeon
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\refint\PigeonRubbishStudios.dll
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\PigeonRubbishStudios.pdb
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\ref\PigeonRubbishStudios.dll
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.8pp09gj8y3.wasm
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.u8dxnv36yf.pdb
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\dotnet.jza1qebw4w.js
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.8pp09gj8y3.wasm.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\PigeonRubbishStudios.u8dxnv36yf.pdb.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\bin\Debug\net10.0\wwwroot\_framework\dotnet.jza1qebw4w.js.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\tsr32mp8ht-{0}-l19bqvp54g-l19bqvp54g.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\cidlsv1iqo-{0}-jllx2fhc2w-jllx2fhc2w.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\0cfkg9cxx5-{0}-bi999pesii-bi999pesii.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\qhj0u4nmty-{0}-8pp09gj8y3-8pp09gj8y3.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\m8gy3bdcin-{0}-u8dxnv36yf-u8dxnv36yf.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\3xtx6nd39w-{0}-jza1qebw4w-jza1qebw4w.gz
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\obj\Debug\net10.0\compressed\oip7y8dsqe-{0}-rs02pyed82-rs02pyed82.gz

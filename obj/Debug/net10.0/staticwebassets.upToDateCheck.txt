@@ -1,6 +1,12 @@
+wwwroot\.nojekyll
 wwwroot\css\app.css
 wwwroot\favicon.png
-wwwroot\icon-192.png
+wwwroot\images\icon\apple-touch-icon.png
+wwwroot\images\icon\favicon-96x96.png
+wwwroot\images\icon\favicon.ico
+wwwroot\images\icon\favicon.svg
+wwwroot\images\icon\web-app-manifest-192x192.png
+wwwroot\images\icon\web-app-manifest-512x512.png
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -45,8 +51,10 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-wwwroot\sample-data\weather.json
+wwwroot\site.webmanifest
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\css\app.css
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\images\icon\favicon.ico
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\images\icon\favicon.svg
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -91,4 +99,4 @@ C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\lib\bootstrap\di
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\sample-data\weather.json
+C:\Users\kbolinger\Documents\Repos\PigeonRubbishStudios\wwwroot\site.webmanifest
